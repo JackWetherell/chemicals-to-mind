@@ -1,14 +1,14 @@
 # Neurology Notes
 
-Personal study notes on the neurological foundations of the mind, written up as a single LaTeX document: **_From Potentials and Chemicals to the Mind_**.
+Personal study notes on the human mind, written up as a single LaTeX document: **_From Potentials and Chemicals to the Mind_**.
 
-The long-term aim of these notes is to build a working understanding of the mind from both neurological and psychological standpoints, starting from the physical substrate (ions, membranes, neurons, glia) and working upward toward cognition, behaviour, and personality.
+These notes are a study of the human mind, and the place where I study the mind, awareness and consciousness. They draw on four areas: neurology, psychiatry, psychedelics, and the philosophy of mind.
 
-The organising question is how emotions, behaviours, self-awareness and experience arise from biological processes: the _easy_ problems of consciousness, in Chalmers' sense, rather than the hard one. The document's introduction states this framing and the closing section takes stock of how far a purely physical account currently reaches.
+The study is rooted in science and physics, so it begins with neurology, starting from the physical substrate (ions, membranes, neurons, glia) and working upward toward perception, emotion, memory, and behaviour. The neurological sections pursue the _easy_ problems of consciousness, in Chalmers' sense: how emotions, behaviours, self-awareness and experience arise from biological processes. Later parts go further, taking up the hard problem of consciousness and deeper spiritual questions, because these are part of the lived experience of having a mind. The document's introduction sets out this framing, and the closing section of the neurology takes stock of how far a purely physical account currently reaches.
 
 ## Source Material
 
-The notes follow the structure of **Ninja Nerd's Neurology lecture series** on YouTube:
+The neurological sections follow the structure of **Ninja Nerd's Neurology lecture series** on YouTube:
 
 - Playlist: [Ninja Nerd, Neurology](https://www.youtube.com/watch?v=ADAOsuaOSCk&list=PLTF9h-T1TcJgx3OFachdjHPMX6VE4VDS1)
 
@@ -34,7 +34,7 @@ The document currently covers the basics of neurology:
 
 13. **The Limbic System**, the limbic lobe and the cingulate and parahippocampal gyri, the hippocampus and its trisynaptic circuit, the amygdala, the limbic roles of the hypothalamus and thalamus, the septal area and the habenula, and the system's functions in olfaction, memory, emotional responses, and motivation and behaviour.
 
-Further sections will be added as the lecture series progresses.
+Further neurology sections will be added as the lecture series progresses, followed by parts on psychiatry, psychedelics, and the philosophy of mind.
 
 ## Files
 
