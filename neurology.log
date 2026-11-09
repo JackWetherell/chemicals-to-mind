@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.8)  8 NOV 2026 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.8)  9 NOV 2026 04:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1663,10 +1663,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `neurology.out' has not changed.
 (rerunfilecheck)             Checksum: C62B8759EF2B1131AF8FFBCDABB2BE67;29538.
  ) 
@@ -1689,7 +1685,7 @@ b></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on neurology.pdf (81 pages, 651201 bytes).
+Output written on neurology.pdf (81 pages, 651202 bytes).
 PDF statistics:
  1405 PDF objects out of 1440 (max. 8388607)
  1273 compressed objects within 13 object streams
