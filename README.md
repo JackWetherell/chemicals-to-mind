@@ -4,7 +4,7 @@ Personal study notes on the human mind.
 
 These notes are a study of the human mind, and the place where I study the mind, awareness and consciousness. They draw on four areas: neurology, psychiatry, psychedelics, and the philosophy of mind.
 
-The study is rooted in science and physics, so it begins with neurology, starting from the physical substrate (ions, membranes, neurons, glia) and working upward toward perception, emotion, memory, and behaviour. The neurological sections pursue the _easy_ problems of consciousness, in Chalmers' sense: how emotions, behaviours, self-awareness and experience arise from biological processes. Later parts go further, taking up the hard problem of consciousness and deeper spiritual questions, because these are part of the lived experience of having a mind. The document's introduction sets out this framing, and the closing section of the neurology takes stock of how far a purely physical account currently reaches.
+The study is rooted in science and physics, so it begins with neurology, starting from the physical substrate (ions, membranes, neurons, glia) and working upward toward perception, emotion, memory, and behaviour. The neurological sections pursue the _easy_ problems of consciousness, in Chalmers' sense: how emotions, behaviours, self-awareness and experience arise from biological processes. Later parts go further, taking up the hard problem of consciousness and deeper spiritual questions, because these are part of the lived experience of having a mind. The document's introduction sets out this framing.
 
 ## Source Material
 
@@ -16,7 +16,7 @@ Ninja Nerd provides the scaffolding and the ordering of topics; the written note
 
 ## Contents
 
-The sections follow the order of the Ninja Nerd playlist: the cellular basics first, then the central nervous system from the top down, then the main systems that run across it. Sections marked _to be written_ are placeholders for lectures not yet reached.
+The sections follow the order of the Ninja Nerd playlist: the cellular basics first, then the central nervous system from the top down, then the main systems that run across it.
 
 1. **Nervous System Structure**, CNS and PNS anatomy, the five lobes of the cerebrum, cerebellum, diencephalon, brainstem, the twelve cranial nerves, ventricles, spinal cord, and the autonomic and enteric nervous systems.
 2. **Neuron Structure**, soma, dendrites, axon, internal machinery, axonal transport, synaptic vesicles, SNARE proteins, and neurotransmitters.
@@ -40,7 +40,7 @@ The sections follow the order of the Ninja Nerd playlist: the cellular basics fi
 20. **The Autonomic Nervous System**, the two-neuron plan, the sympathetic division with its chain, adrenal medulla, and adrenergic receptors, the parasympathetic division with the vagus, muscarinic receptors, and vagal tone, how the two oppose and cooperate, central control from the hypothalamus and limbic system, and the visceral afferents that return the state of the body to the brain.
 21. **The Enteric Nervous System**, the myenteric and submucosal plexuses and their neurons, glia, and pacemaker cells, the peristaltic reflex and the other programmes the gut runs without the brain, serotonin in the gut, and the gut-brain axis, with the vagus, gut hormones, the microbiome, and the gut-first hypothesis of Parkinson's disease.
 
-Further neurology sections will be added as the lecture series progresses, followed by parts on psychiatry, psychedelics, and the philosophy of mind.
+These sections complete the neurological foundation. Parts on psychiatry, psychedelics, and the philosophy of mind are to follow.
 
 ## Files
 
@@ -61,4 +61,4 @@ Two passes are needed to resolve the table of contents and cross-references.
 
 ## Status
 
-Work in progress. Expect the document to grow and be revised as the lectures are worked through.
+Work in progress. The neurology is complete in outline and will be revised as the lectures are worked through; the parts on psychiatry, psychedelics, and the philosophy of mind are still to be written.
