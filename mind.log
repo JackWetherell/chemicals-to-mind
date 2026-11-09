@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.8)  9 NOV 2026 05:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.8)  9 NOV 2026 05:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**neurology.tex
-(./neurology.tex
+**mind.tex
+(./mind.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -517,8 +517,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box65
 )
-(./neurology.aux)
-\openout1 = `neurology.aux'.
+(./mind.aux)
+\openout1 = `mind.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -624,10 +624,10 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 56.
-
-(./neurology.out) (./neurology.out)
+ (./mind.out)
+(./mind.out)
 \@outlinefile=\write3
-\openout3 = `neurology.out'.
+\openout3 = `mind.out'.
 
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
 9.
@@ -669,15 +669,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./neurology.toc
+) (./mind.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}] [2] [3])
 \tf@toc=\write4
-\openout4 = `neurology.toc'.
+\openout4 = `mind.toc'.
 
  [4] [5] [6]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
@@ -698,22 +699,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
 [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65]
 [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80]
-(./neurology.aux)
+(./mind.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `neurology.out' has not changed.
+Package rerunfilecheck Info: File `mind.out' has not changed.
 (rerunfilecheck)             Checksum: 9D3959F8CC21FBC7B2925435EC2796D9;27762.
  ) 
 Here is how much of TeX's memory you used:
  16155 strings out of 476182
- 254974 string characters out of 5795595
+ 254854 string characters out of 5795595
  1960975 words of memory out of 5000000
  37398 multiletter control sequences out of 15000+600000
  630486 words of font info for 214 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,18n,79p,1851b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,18n,79p,1846b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/pub
@@ -725,7 +726,7 @@ b></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on neurology.pdf (80 pages, 647928 bytes).
+Output written on mind.pdf (80 pages, 647926 bytes).
 PDF statistics:
  1373 PDF objects out of 1440 (max. 8388607)
  1242 compressed objects within 13 object streams

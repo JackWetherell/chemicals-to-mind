@@ -44,17 +44,17 @@ Further neurology sections will be added as the lecture series progresses, follo
 
 ## Files
 
-- `neurology.tex`, the source document.
-- `neurology.pdf`, the compiled PDF (rebuilt from the source).
-- `neurology.aux`, `neurology.log`, `neurology.out`, `neurology.toc`, LaTeX build artifacts.
+- `mind.tex`, the source document.
+- `mind.pdf`, the compiled PDF (rebuilt from the source).
+- `mind.aux`, `mind.log`, `mind.out`, `mind.toc`, LaTeX build artifacts.
 
 ## Building
 
 The document is a standard `article`-class LaTeX file and can be built with any modern TeX distribution:
 
 ```
-pdflatex neurology.tex
-pdflatex neurology.tex
+pdflatex mind.tex
+pdflatex mind.tex
 ```
 
 Two passes are needed to resolve the table of contents and cross-references.
