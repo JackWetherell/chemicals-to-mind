@@ -38,7 +38,7 @@ The sections follow the order of the Ninja Nerd playlist: the cellular basics fi
 18. **The Basal Ganglia**, components and the cortex-striatum-thalamus loop, the direct and indirect pathways, dopamine and the D1 and D2 receptors, the nigrostriatal modulation of movement, and Parkinson's and Huntington's disease.
 19. **The Limbic System**, the limbic lobe and the cingulate and parahippocampal gyri, the hippocampus and its trisynaptic circuit, the amygdala, the limbic roles of the hypothalamus and thalamus, the septal area and the habenula, and the system's functions in olfaction, memory, emotional responses, and motivation and behaviour.
 20. **The Autonomic Nervous System**, the two-neuron plan, the sympathetic division with its chain, adrenal medulla, and adrenergic receptors, the parasympathetic division with the vagus, muscarinic receptors, and vagal tone, how the two oppose and cooperate, central control from the hypothalamus and limbic system, and the visceral afferents that return the state of the body to the brain.
-21. **The Enteric Nervous System**, _to be written._
+21. **The Enteric Nervous System**, the myenteric and submucosal plexuses and their neurons, glia, and pacemaker cells, the peristaltic reflex and the other programmes the gut runs without the brain, serotonin in the gut, and the gut-brain axis, with the vagus, gut hormones, the microbiome, and the gut-first hypothesis of Parkinson's disease.
 
 Further neurology sections will be added as the lecture series progresses, followed by parts on psychiatry, psychedelics, and the philosophy of mind.
 
