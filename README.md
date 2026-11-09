@@ -1,6 +1,6 @@
-# Neurology Notes
+**_From Potentials and Chemicals to the Mind_**.
 
-Personal study notes on the human mind, written up as a single LaTeX document: **_From Potentials and Chemicals to the Mind_**.
+Personal study notes on the human mind.
 
 These notes are a study of the human mind, and the place where I study the mind, awareness and consciousness. They draw on four areas: neurology, psychiatry, psychedelics, and the philosophy of mind.
 
