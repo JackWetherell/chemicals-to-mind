@@ -37,7 +37,7 @@ The sections follow the order of the Ninja Nerd playlist: the cellular basics fi
 17. **The Spinal Cord**, gross anatomy, the spinal nerves and their roots, and dermatomes; the grey matter, with the dorsal horn as a gate on pain, the motor neurons, the stretch and withdrawal reflexes, and the spinal generators of walking; and the white matter, with the ascending and descending tracts, where each crosses, and the lesions that show it.
 18. **The Basal Ganglia**, components and the cortex-striatum-thalamus loop, the direct and indirect pathways, dopamine and the D1 and D2 receptors, the nigrostriatal modulation of movement, and Parkinson's and Huntington's disease.
 19. **The Limbic System**, the limbic lobe and the cingulate and parahippocampal gyri, the hippocampus and its trisynaptic circuit, the amygdala, the limbic roles of the hypothalamus and thalamus, the septal area and the habenula, and the system's functions in olfaction, memory, emotional responses, and motivation and behaviour.
-20. **The Autonomic Nervous System**, with the sympathetic and parasympathetic divisions; _to be written._
+20. **The Autonomic Nervous System**, the two-neuron plan, the sympathetic division with its chain, adrenal medulla, and adrenergic receptors, the parasympathetic division with the vagus, muscarinic receptors, and vagal tone, how the two oppose and cooperate, central control from the hypothalamus and limbic system, and the visceral afferents that return the state of the body to the brain.
 21. **The Enteric Nervous System**, _to be written._
 
 Further neurology sections will be added as the lecture series progresses, followed by parts on psychiatry, psychedelics, and the philosophy of mind.
