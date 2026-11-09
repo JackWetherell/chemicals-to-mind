@@ -18,34 +18,27 @@ Ninja Nerd provides the scaffolding and the ordering of topics; the written note
 
 The sections follow the order of the Ninja Nerd playlist: the cellular basics first, then the central nervous system from the top down, then the main systems that run across it. Sections marked _to be written_ are placeholders for lectures not yet reached.
 
-1. **Nervous System Structure**, CNS and PNS anatomy, cerebrum, cerebellum, diencephalon, brainstem, the twelve cranial nerves, ventricles, spinal cord, and the autonomic nervous system.
+1. **Nervous System Structure**, CNS and PNS anatomy, the five lobes of the cerebrum, cerebellum, diencephalon, brainstem, the twelve cranial nerves, ventricles, spinal cord, and the autonomic and enteric nervous systems.
 2. **Neuron Structure**, soma, dendrites, axon, internal machinery, axonal transport, synaptic vesicles, SNARE proteins, and neurotransmitters.
 3. **Neuron Firing**, resting potential, the Nernst equation, graded potentials, the action potential, synaptic release, reuptake, refractory periods, retrograde signalling by endocannabinoids, autoreceptors, and the drugs that mimic or block neurotransmitters at their receptors.
 4. **Glial Cells**, astrocytes, oligodendrocytes, Schwann cells, myelin, ependymal cells, microglia, and their roles in health and disease.
-5. **The Meninges**, _to be written._
-6. **The Frontal Lobe**, primary motor cortex, premotor and supplementary motor areas, frontal eye field, Broca's area, and the prefrontal cortex.
-7. **The Parietal Lobe**, primary somatosensory cortex, somatosensory association cortex, and the posterior association area.
-8. **The Temporal Lobe**, primary auditory cortex, auditory association cortex, primary olfactory cortex, olfactory association cortex, and Wernicke's area.
-9. **The Occipital Lobe**, primary visual cortex and the visual association cortex.
-10. **The Insula**, primary gustatory cortex, interoception and visceral sensation, and the anterior insula's role in emotion, disgust, and awareness.
-11. **The Cerebral Cortex: An Overview**, _to be written._
-12. **The Thalamus**, structure and the nuclear groups, the reticular nucleus as the gate, limbic involvement through the anterior and mediodorsal nuclei, the modality-specific sensory relays and how they are gated by attention and arousal, and the motor loops returning from the basal ganglia and cerebellum.
-13. **The Hypothalamus**, structure and nuclei, its role as the output stage of the limbic system, control of the pituitary and the endocrine axes, command of the autonomic nervous system, and the pathways linking it to the hippocampus, amygdala, and prefrontal cortex.
-14. **The Midbrain**, _to be written._
-15. **The Pons**, _to be written._
-16. **The Medulla**, _to be written._
-17. **The Cerebellum**, _to be written._
-18. **The Cranial Nerves**, _to be written._
-19. **The Spinal Cord: Gross Anatomy and Spinal Nerves**, _to be written._
-20. **The Spinal Cord: Grey Matter**, _to be written._
-21. **The Spinal Cord: White Matter**, _to be written._
-22. **The Basal Ganglia**, components and the cortex-striatum-thalamus loop, the direct and indirect pathways, dopamine and the D1 and D2 receptors, and the nigrostriatal modulation of movement.
-23. **The Limbic System**, the limbic lobe and the cingulate and parahippocampal gyri, the hippocampus and its trisynaptic circuit, the amygdala, the limbic roles of the hypothalamus and thalamus, the septal area and the habenula, and the system's functions in olfaction, memory, emotional responses, and motivation and behaviour.
-24. **The Autonomic Nervous System**, _to be written._
-25. **The Sympathetic Nervous System**, _to be written._
-26. **The Parasympathetic Nervous System**, _to be written._
-27. **The Enteric Nervous System**, _to be written._
-28. **Gustation: The Taste Pathway**, _to be written._
+5. **The Frontal Lobe**, primary motor cortex, premotor and supplementary motor areas, frontal eye field, Broca's area, and the prefrontal cortex.
+6. **The Parietal Lobe**, primary somatosensory cortex, somatosensory association cortex, and the posterior association area.
+7. **The Temporal Lobe**, primary auditory cortex, auditory association cortex, primary olfactory cortex, olfactory association cortex, and Wernicke's area and aphasia.
+8. **The Occipital Lobe**, primary visual cortex and the visual association cortex.
+9. **The Insula**, primary gustatory cortex, interoception and visceral sensation, and the anterior insula's role in emotion, disgust, and awareness.
+10. **The Thalamus**, structure and the nuclear groups, the reticular nucleus as the gate, limbic involvement through the anterior and mediodorsal nuclei, the modality-specific sensory relays and how they are gated by attention and arousal, and the motor loops returning from the basal ganglia and cerebellum.
+11. **The Hypothalamus**, structure and nuclei, its role as the output stage of the limbic system, control of the pituitary and the endocrine axes, command of the autonomic nervous system, and the pathways linking it to the hippocampus, amygdala, and prefrontal cortex.
+12. **The Midbrain**, _to be written._
+13. **The Pons**, _to be written._
+14. **The Medulla**, _to be written._
+15. **The Cerebellum**, _to be written._
+16. **The Cranial Nerves**, _to be written._
+17. **The Spinal Cord**, gross anatomy and spinal nerves, grey matter, and white matter; _to be written._
+18. **The Basal Ganglia**, components and the cortex-striatum-thalamus loop, the direct and indirect pathways, dopamine and the D1 and D2 receptors, the nigrostriatal modulation of movement, and Parkinson's and Huntington's disease.
+19. **The Limbic System**, the limbic lobe and the cingulate and parahippocampal gyri, the hippocampus and its trisynaptic circuit, the amygdala, the limbic roles of the hypothalamus and thalamus, the septal area and the habenula, and the system's functions in olfaction, memory, emotional responses, and motivation and behaviour.
+20. **The Autonomic Nervous System**, with the sympathetic and parasympathetic divisions; _to be written._
+21. **The Enteric Nervous System**, _to be written._
 
 Further neurology sections will be added as the lecture series progresses, followed by parts on psychiatry, psychedelics, and the philosophy of mind.
 
@@ -53,7 +46,7 @@ Further neurology sections will be added as the lecture series progresses, follo
 
 - `neurology.tex`, the source document.
 - `neurology.pdf`, the compiled PDF (rebuilt from the source).
-- `neurology.aux`, `neurology.log`, `neurology.out`, `neurology.toc`, `neurology.synctex.gz`, LaTeX build artifacts.
+- `neurology.aux`, `neurology.log`, `neurology.out`, `neurology.toc`, LaTeX build artifacts.
 
 ## Building
 
