@@ -31,7 +31,7 @@ The sections follow the order of the Ninja Nerd playlist: the cellular basics fi
 11. **The Hypothalamus**, structure and nuclei, its role as the output stage of the limbic system, control of the pituitary and the endocrine axes, command of the autonomic nervous system, and the pathways linking it to the hippocampus, amygdala, and prefrontal cortex.
 12. **The Midbrain**, the plan common to the three levels of the brainstem, the tectum and its colliculi, blindsight, the oculomotor nuclei, the red nucleus, the substantia nigra and ventral tegmental area, the periaqueductal grey and the descending control of pain, and the reticular formation and the ascending arousal system.
 13. **The Pons**, the base and the tegmentum, the locked-in syndrome, the corticopontine relay to the cerebellum, the nuclei of the trigeminal, abducens, facial, and vestibulocochlear nerves, the locus coeruleus, REM sleep and dreaming, and the parabrachial nuclei and the shaping of breathing.
-14. **The Medulla**, _to be written._
+14. **The Medulla**, the pyramids and their decussation, the dorsal column nuclei and the medial lemniscus, the inferior olive, the nuclei of the glossopharyngeal, vagus, and hypoglossal nerves, the solitary nucleus and area postrema, the lateral and medial medullary syndromes, the baroreflex, the generation of breathing, and brainstem death.
 15. **The Cerebellum**, _to be written._
 16. **The Cranial Nerves**, _to be written._
 17. **The Spinal Cord**, gross anatomy and spinal nerves, grey matter, and white matter; _to be written._
