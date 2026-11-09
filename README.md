@@ -20,7 +20,7 @@ The sections follow the order of the Ninja Nerd playlist: the cellular basics fi
 
 1. **Nervous System Structure**, CNS and PNS anatomy, the five lobes of the cerebrum, cerebellum, diencephalon, brainstem, the twelve cranial nerves, ventricles, spinal cord, and the autonomic and enteric nervous systems.
 2. **Neuron Structure**, soma, dendrites, axon, internal machinery, axonal transport, synaptic vesicles, SNARE proteins, and neurotransmitters.
-3. **Neuron Firing**, resting potential, the Nernst equation, graded potentials, the action potential, synaptic release, reuptake, refractory periods, retrograde signalling by endocannabinoids, autoreceptors, and the drugs that mimic or block neurotransmitters at their receptors.
+3. **Neuron Firing**, resting potential, the Nernst equation, graded potentials, the action potential, synaptic release, reuptake, refractory periods, retrograde signalling by endocannabinoids, autoreceptors, the drugs that mimic or block neurotransmitters at their receptors, and the drugs that regulate neurotransmission: SSRIs, SNRIs, NDRIs, stimulants, antipsychotics, and anaesthetics.
 4. **Glial Cells**, astrocytes, oligodendrocytes, Schwann cells, myelin, ependymal cells, microglia, and their roles in health and disease.
 5. **The Frontal Lobe**, primary motor cortex, premotor and supplementary motor areas, frontal eye field, Broca's area, and the prefrontal cortex.
 6. **The Parietal Lobe**, primary somatosensory cortex, somatosensory association cortex, and the posterior association area.
