@@ -13,6 +13,10 @@
 \usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{array}
+
+% Left-aligned table column of a given width, so narrow cells do not stretch to fill the line.
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{xcolor}
 \usepackage{hyperref}
 
@@ -331,7 +335,7 @@ The feature to carry forward is the polarity. A neuron enforces one-way traffic,
 
 So far we have been saying that neurons ``send signals.'' It is time to be concrete about what that actually means. A neuron does not have tiny wires or its own battery. What it has is a membrane, some ions, and some very cleverly controlled channels through which those ions can move. Everything we call neural activity (every perception, every thought, every movement) is ultimately some pattern of ions crossing membranes.
 
-This section builds the story up from the ground. We begin with the resting state: why an idle neuron has a voltage across its membrane at all. We then see how small, local disturbances (graded potentials) can add up to a threshold crossing, at which point a stereotyped, all-or-nothing \textbf{action potential} is born. Finally we follow that action potential down the axon to the synapse, where it triggers the chemical release we just described.
+This section builds the story up from the ground. We begin with the resting state: why an idle neuron has a voltage across its membrane at all. We then see how small, local disturbances (graded potentials) can add up to a threshold crossing, at which point a stereotyped, all-or-nothing \textbf{action potential} is born. Finally we follow that action potential down the axon to the synapse, where it triggers the chemical release we just described. The section closes with the drugs that act on these processes, either by imitating a transmitter or by regulating how much of it there is.
 
 \subsection{The Resting Membrane Potential}
 
@@ -596,11 +600,79 @@ The cannabis plant furnishes the neatest contrast in the whole section, because 
 
 It is worth ending with two of the most widely consumed psychoactive drugs in the world, precisely because neither is a mimic, and seeing why sharpens the definition. \textbf{Caffeine} works chiefly as an \textbf{antagonist} at \textbf{adenosine} receptors, the \textbf{A\textsubscript{1}} and \textbf{A\textsubscript{2A}} subtypes. Adenosine accumulates through the waking day and, acting on these receptors, promotes sleepiness; caffeine occupies the receptors without activating them, so the drowsiness signal is blocked. Caffeine does not imitate a transmitter, then. It removes a brake, and alertness is what is left when the brake is gone.
 
-\textbf{Alcohol} is diffuse in a different way, acting not at one clean site but across several, and again by modulation rather than mimicry. Its two principal actions are as a \textbf{positive allosteric modulator} of the \textbf{GABA\textsubscript{A}} receptor, the ionotropic chloride channel that is the brain's main inhibitory receptor, potentiating inhibition and producing sedation, and as an \textbf{antagonist} at the \textbf{NMDA} glutamate receptor, damping excitation. The \textbf{benzodiazepines} belong beside alcohol here as the tidier case: they too are positive allosteric modulators of GABA\textsubscript{A}, binding their own distinct site to make the receptor more responsive to the GABA already present, which is why they calm without directly opening the channel themselves. The general point closing the section is that ``acting at a receptor'' covers three quite different things (agonism, antagonism, and allosteric tuning), and only the first deserves the name of mimicry; the confusion of the three is the confusion of a drug that imitates a signal with one that merely blocks or bends it.
+\textbf{Alcohol} is diffuse in a different way, acting not at one clean site but across several, and again by modulation rather than mimicry. Its two principal actions are as a \textbf{positive allosteric modulator} of the \textbf{GABA\textsubscript{A}} receptor, the ionotropic chloride channel that is the brain's main inhibitory receptor, potentiating inhibition and producing sedation, and as an \textbf{antagonist} at the \textbf{NMDA} glutamate receptor, damping excitation. The \textbf{benzodiazepines} belong beside alcohol here as the tidier case: they too are positive allosteric modulators of GABA\textsubscript{A}, binding their own distinct site to make the receptor more responsive to the GABA already present, which is why they calm without directly opening the channel themselves. The general point of this subsection is that ``acting at a receptor'' covers three quite different things (agonism, antagonism, and allosteric tuning), and only the first deserves the name of mimicry; the confusion of the three is the confusion of a drug that imitates a signal with one that merely blocks or bends it.
+
+\subsection{Neurotransmitter Regulation}
+
+The drugs in the previous subsection act by occupying a receptor. A larger group, including most of the medicines prescribed in psychiatry, act one step back, on the machinery that decides how much transmitter is present at the synapse and for how long. Transmission has several such control points: a transmitter must be made, packed into vesicles, released, and then cleared from the cleft by reuptake or breakdown, and a drug that alters any one of these changes the signal without imitating it. This subsection takes the main classes in turn: the antidepressants that block reuptake, the stimulants that block it more powerfully or force release, the antipsychotics that block dopamine receptors outright, and finally the anaesthetics, which suppress signalling so broadly that sensation or consciousness itself is switched off.
+
+Two lessons from earlier in the section keep returning. The first is that a drug's immediate action and its clinical effect are often different things, because the system adapts, as the autoreceptor account of the SSRIs showed. The second is that a drug acts wherever its target is found, and the same target sits in circuits with very different jobs, so that one molecular action can be the treatment in one pathway and a side effect in another.
+
+The first three classes all act on reuptake. The monoamines are cleared from the synapse mainly by transporters on the presynaptic membrane that pull the transmitter back into the terminal to be repackaged, and there is one for each: the \textbf{serotonin transporter (SERT)}, the \textbf{noradrenaline transporter (NET)}, and the \textbf{dopamine transporter (DAT)}. Block a transporter and the transmitter it would have removed stays in the cleft longer and at a higher concentration, so each release has a larger and longer effect on the receptors around it. The antidepressants that follow differ mainly in which of the three transporters they block.
+
+Selectivity is the point of the modern drugs, and their history shows why. The older \textbf{tricyclic} antidepressants, such as amitriptyline, block both SERT and NET, but they also block histamine, muscarinic, and $\alpha$\textsubscript{1} receptors, which causes drowsiness, a dry mouth, constipation, and dizziness on standing, and in overdose they are dangerous to the heart. The drugs that replaced them were designed to act on the transporters and little else.
+
+\subsubsection{SSRIs: Fluoxetine (Prozac)}
+
+\textbf{Selective serotonin reuptake inhibitors (SSRIs)} block SERT and leave the other transporters and receptors largely alone. \textbf{Fluoxetine}, sold as \textbf{Prozac} from the late 1980s, was the first to be widely used, and it was followed by sertraline, citalopram, escitalopram, and others that differ mainly in how long they last in the body and how strongly they interact with other drugs. They are the first-line drug treatment for depression, and are also used for anxiety disorders, obsessive-compulsive disorder, and bulimia.
+
+Their mechanism was set out in the subsection on autoreceptors and needs only an outline here. The blockade of SERT is immediate, but the extra serotonin around the raphe nuclei first activates the 5-HT\textsubscript{1A} autoreceptors there, which slows the serotonergic neurons and cancels much of the gain. Only as those autoreceptors desensitise, over two to four weeks, does serotonin at the distant terminals genuinely rise, and the clinical improvement follows that slower timetable. Even this is probably not the whole story: the later changes also include altered gene expression and the growth of new synaptic connections, and which of these the improvement depends on is still debated.
+
+The side effects follow from the fact that serotonin receptors are found throughout the body. Early nausea comes from 5-HT\textsubscript{3} receptors in the gut and brainstem, which is why it usually fades within the first weeks, and why the 5-HT\textsubscript{3} antagonist ondansetron in Table~\ref{tab:transmitters} is an anti-sickness drug. Sexual side effects, emotional blunting, and a brief rise in anxiety at the start of treatment are also common. The most serious risk comes from combining an SSRI with other drugs that raise serotonin, such as the \textbf{monoamine oxidase inhibitors (MAOIs)}, an older class of antidepressant that blocks the enzyme which breaks the monoamines down. Serotonin can then rise far enough to cause \textbf{serotonin syndrome}, with agitation, tremor, fever, and muscle twitching.
+
+\subsubsection{SNRIs: Venlafaxine and Duloxetine}
+
+\textbf{Serotonin--noradrenaline reuptake inhibitors (SNRIs)} block both SERT and NET. The main examples are \textbf{venlafaxine} (Effexor) and \textbf{duloxetine} (Cymbalta). Venlafaxine shows how selectivity can depend on dose: at low doses it acts mainly on SERT and behaves much like an SSRI, and its effect on NET becomes significant only as the dose rises.
+
+Adding noradrenaline brings two differences. The first is a use beyond mood. Noradrenaline and serotonin both feed the descending pathways from the brainstem that suppress pain signals as they enter the spinal cord, and strengthening those pathways makes SNRIs useful for chronic pain, including the nerve pain of diabetes and fibromyalgia, where SSRIs are less effective. The second is a set of side effects that come from noradrenaline's role in the sympathetic nervous system: sweating, a faster heart rate, and, at higher doses, a rise in blood pressure. Stopping an SNRI abruptly, venlafaxine especially, can also cause unpleasant withdrawal symptoms, because the drug leaves the body quickly.
+
+\subsubsection{NDRIs: Bupropion (Wellbutrin)}
+
+\textbf{Bupropion}, sold as \textbf{Wellbutrin} for depression and as Zyban for stopping smoking, is the main \textbf{noradrenaline--dopamine reuptake inhibitor (NDRI)}. It blocks NET and DAT, relatively weakly, and leaves SERT alone, and that difference from the SSRIs shows directly in its profile. It does not cause the sexual side effects or emotional blunting associated with serotonin, and it tends not to cause weight gain, which is why it is often chosen when those side effects matter, or added to an SSRI when they appear. Its action on dopamine is thought to be why it helps with low energy and loss of motivation, and why it helps people stop smoking, easing the craving that follows when nicotine's boost to dopamine is taken away; bupropion also blocks nicotinic receptors directly. Its main risk is that, at high doses, it makes seizures more likely.
+
+Blocking DAT raises an obvious question, since cocaine blocks it too. The answer lies in how far and how fast dopamine rises. Bupropion blocks the transporter weakly and is taken by mouth in a slow-release form, so dopamine rises modestly and gradually, and the drug has little potential for misuse. The same principle separates the medical and recreational uses of the stimulants that follow.
+
+\subsubsection{Stimulants: Amphetamine, Methylphenidate, and Cocaine}
+
+The \textbf{stimulants} raise dopamine and noradrenaline much more strongly, and they do it in two different ways.
+
+\textbf{Methylphenidate} (Ritalin) and \textbf{cocaine} are reuptake blockers, like the antidepressants but more potent at DAT. Methylphenidate blocks DAT and NET; cocaine blocks all three monoamine transporters. Cocaine also has a second action, which links it to the end of this subsection: it blocks voltage-gated sodium channels, and in 1884 it became the first local anaesthetic used in surgery, before safer synthetic versions replaced it.
+
+\textbf{Amphetamine} works differently, and the difference matters. It is not a blocker but a substrate: its shape is close enough to dopamine and noradrenaline that the transporters carry it into the terminal. Once inside, it disrupts the storage of transmitter in vesicles, so that dopamine builds up in the cytoplasm, and it makes the transporters run in reverse, pumping that dopamine out into the cleft. The result is a release of transmitter that does not depend on action potentials at all, which is why amphetamine raises dopamine further than a blocker does.
+
+At low, steady doses taken by mouth, methylphenidate and amphetamine are the main treatments for \textbf{attention deficit hyperactivity disorder (ADHD)}, and stimulants are also used to treat narcolepsy. It is often called paradoxical that a stimulant should help hyperactivity, but the effect is not paradoxical. At these doses the important action is in the prefrontal cortex, where extra dopamine and noradrenaline strengthen the circuits that keep attention on a task and hold back impulses (the executive functions taken up in the section on the frontal lobe), and smaller improvements in focus are seen in people without the condition too.
+
+Taken in larger doses, or smoked, snorted, or injected so that they reach the brain within seconds, the same drugs produce euphoria, and they are among the most addictive substances known. What separates the two uses is mainly the size and speed of the dopamine rise in the reward circuitry that the section on the limbic system describes: a slow, modest rise improves attention, while a fast, steep one is felt as a high and is strongly reinforcing. At high doses or with repeated use, amphetamine and cocaine can also produce \textbf{psychosis}, with paranoia and hallucinations, and that observation is one of the main clues behind the next class of drug.
+
+\subsubsection{Antipsychotics: Blocking Dopamine}
+
+If too much dopamine can produce psychosis, blocking dopamine might treat it, and that is broadly how the \textbf{antipsychotics} work. The first, \textbf{chlorpromazine}, was introduced in the early 1950s, and its mechanism was worked out only later: the drugs that treat psychosis best at the lowest doses are the ones that bind most strongly to the \textbf{D2 receptor}, where they act as antagonists. This is the basis of the \textbf{dopamine hypothesis} of psychosis, which in its modern form holds that symptoms such as hallucinations and delusions arise from excessive dopamine release in the striatum, lending ordinary perceptions and thoughts a false sense of significance. The drugs treat these \textit{positive} symptoms reasonably well, and do much less for the \textit{negative} symptoms of schizophrenia (withdrawal, flattened emotion, and loss of motivation) or for its effects on thinking.
+
+Blocking D2 receptors is a blunt instrument, because a drug cannot block them in one pathway and spare them in another. They sit in several dopamine systems, and blocking each has a predictable result:
+
+\begin{itemize}
+    \item In the \textbf{mesolimbic} pathway to the ventral striatum, blockade is the intended therapeutic effect.
+    \item In the \textbf{nigrostriatal} pathway, blockade imitates the loss of dopamine that causes Parkinson's disease, producing stiffness, slowness, and tremor. These are the \textbf{extrapyramidal side effects}, and the section on the basal ganglia explains why they take that form. Years of treatment can also cause \textbf{tardive dyskinesia}, involuntary movements of the mouth and face that may persist after the drug is stopped.
+    \item In the pathway from the hypothalamus to the pituitary, dopamine normally holds back the hormone \textbf{prolactin}, so blocking it raises prolactin, which can cause breast enlargement, milk production, and missed periods.
+\end{itemize}
+
+Brain imaging shows how narrow the working window is: the therapeutic effect generally needs roughly two thirds of the striatum's D2 receptors to be occupied, and movement side effects become likely above about four fifths. This is the clearest case in these notes of a drug acting wherever its target is found: the same molecular action is the treatment in one pathway and a side effect in the next two.
+
+The older \textbf{typical} antipsychotics, such as chlorpromazine and \textbf{haloperidol}, are strong D2 blockers and often cause movement side effects. The newer \textbf{atypical} antipsychotics, such as \textbf{risperidone}, \textbf{olanzapine}, \textbf{quetiapine}, and \textbf{clozapine}, cause them less often, partly because many of them also block the \textbf{5-HT\textsubscript{2A}} receptor and partly because some bind D2 more loosely. That 5-HT\textsubscript{2A} receptor is the one at which the psychedelics act as agonists; the atypical antipsychotics are antagonists at the same receptor, and taking one blunts or blocks a psychedelic experience. The atypicals carry their own costs, chiefly weight gain and a higher risk of diabetes, most of all with olanzapine and clozapine. Clozapine is also the one antipsychotic that often works when others have failed, but it needs regular blood tests because it can dangerously lower the white blood cell count. \textbf{Aripiprazole} takes a different approach again. It is a D2 \textit{partial agonist}, the category defined at the start of the mimicry subsection, so it turns dopamine signalling down where dopamine is high while keeping some signalling where it is low.
+
+\subsubsection{Anaesthetics: General and Local}
+
+\textbf{Anaesthetics} sit at the far end of the scale. Rather than adjusting one transmitter system, they suppress neural signalling broadly enough to remove sensation from part of the body or consciousness from the whole person. They come in two kinds that act in quite different ways.
+
+\textbf{Local anaesthetics}, such as \textbf{lidocaine}, block the voltage-gated sodium channels on which the action potential depends. With those channels blocked a nerve cannot fire, and signals from the numbed area never reach the spinal cord. The drug crosses the membrane in an uncharged form and blocks the channel from the inside, and it binds most readily to channels that are open or inactivated, so nerves that are firing hard are blocked first. Thin fibres are also blocked before thick ones, which is why pain and temperature disappear before touch and before the motor fibres, and why an epidural in labour can remove pain while leaving some feeling and movement in the legs.
+
+\textbf{General anaesthetics} act on the brain and produce a reversible state of unconsciousness, together with loss of memory, loss of response to pain, and stillness. Most of them work by strengthening inhibition. \textbf{Propofol}, given into a vein, and inhaled anaesthetics such as \textbf{sevoflurane} are positive allosteric modulators of the GABA\textsubscript{A} receptor, the same action as the benzodiazepines and alcohol in the previous subsection but far stronger; the inhaled agents also open potassium channels that make neurons harder to excite. A second group, which includes \textbf{ketamine} and \textbf{nitrous oxide}, works mainly by blocking the NMDA glutamate receptor instead. Ketamine produces a distinctive \textit{dissociative} state, in which the patient may keep their eyes open and go on breathing normally while being cut off from their surroundings. At lower doses it has also become a fast-acting treatment for severe depression, working within hours rather than weeks, a finding the section on the limbic system returns to.
+
+How these drugs actually remove consciousness is still not fully understood, which makes them unusually interesting for the larger questions of these notes. Around 1900 it was noticed that an anaesthetic's strength tracks how well it dissolves in oil, which suggested a general effect on the fatty membrane; the targets are now known to be specific proteins, but knowing the receptor does not by itself explain the result. Leading accounts point to a breakdown in communication between the thalamus and the cortex, and between different regions of the cortex, so that the brain remains active but its parts no longer work together as a whole. Anaesthesia is therefore a switch for consciousness that can be turned off and on at will and is used on hundreds of millions of patients a year, whose molecular action is known and whose effect on experience has not yet been explained in terms of that action. Within the neurology itself, it is a reminder of the questions the later parts of these notes take up.
 
 \subsection{Summary}
 
-The electrical life of a neuron is a story of ions crossing a membrane. The resting potential is set mostly by potassium permeability. Small graded potentials from synaptic input summate at the axon hillock; if they push the membrane past threshold, a self-reinforcing avalanche of sodium entry produces an action potential, which propagates to the axon terminal. There, calcium influx triggers vesicle fusion, neurotransmitter is released, and the process starts again in the next cell. Refractory periods keep the signal unidirectional and bounded. Layered on top of this forward flow are two presynaptic brakes. Endocannabinoids, synthesised on demand in the postsynaptic membrane, travel back across the cleft to suppress release from the terminal that just fired, giving the receiving cell a say in how much it is sent; autoreceptors let the sending neuron regulate itself, damping release at the terminal and firing rate at the soma according to how much transmitter it has already put out. These same receptors are also where drugs act, mimicking the natural signal as agonists, blocking it as antagonists, or allosterically tuning the response up or down, and the effect a drug produces follows from which of these it does and at which receptor. The Nernst equation, which at first looks like a piece of physical chemistry, turns out to be quietly responsible for most of it.
+The electrical life of a neuron is a story of ions crossing a membrane. The resting potential is set mostly by potassium permeability. Small graded potentials from synaptic input summate at the axon hillock; if they push the membrane past threshold, a self-reinforcing avalanche of sodium entry produces an action potential, which propagates to the axon terminal. There, calcium influx triggers vesicle fusion, neurotransmitter is released, and the process starts again in the next cell. Refractory periods keep the signal unidirectional and bounded. Layered on top of this forward flow are two presynaptic brakes. Endocannabinoids, synthesised on demand in the postsynaptic membrane, travel back across the cleft to suppress release from the terminal that just fired, giving the receiving cell a say in how much it is sent; autoreceptors let the sending neuron regulate itself, damping release at the terminal and firing rate at the soma according to how much transmitter it has already put out. These same receptors are also where drugs act, mimicking the natural signal as agonists, blocking it as antagonists, or allosterically tuning the response up or down, and the effect a drug produces follows from which of these it does and at which receptor. Other drugs act on the regulation of transmission instead: the antidepressants and many stimulants block the transporters that clear the monoamines from the cleft, amphetamine forces their release, the antipsychotics block dopamine's D2 receptor, and the anaesthetics silence signalling broadly enough to remove sensation or consciousness. The Nernst equation, which at first looks like a piece of physical chemistry, turns out to be quietly responsible for most of it.
 
 One result of this section deserves to be carried further than the others, because it is the first point at which anything resembling \textit{meaning} enters the account. A neurotransmitter has no intrinsic significance. Glutamate is not an excitatory molecule and GABA is not an inhibitory one; glutamate excites because the receptors that bind it happen to pass sodium, and put on a chloride-selective channel it would inhibit. The signal is identical in every case, and what the signal means is decided entirely by the receiver. This is a small fact about pore selectivity, and it is also the seed of something much larger, because it establishes that significance in a nervous system is not carried by a message but assigned by whatever the message reaches. The same principle appears twice more in these notes and does progressively heavier work each time: at the autoreceptor, where a receptor's location rather than its identity determines whether it is a feedback sensor or an ordinary receiver, and in the basal ganglia, where one diffuse broadcast of dopamine promotes movement and suppresses it simultaneously, because the two populations it lands on carry receptors of opposite sign. A system built this way can make one chemical mean many things, which is a large part of how so much is achieved with so short a list of transmitters.
 
@@ -608,8 +680,8 @@ The transmitters and receptor families met across this section are gathered in T
 
 {\footnotesize
 \renewcommand{\arraystretch}{1.3}
-\begin{longtable}{p{2.9cm} p{2.4cm} p{1.8cm} p{1.9cm} p{4.0cm}}
-\caption{The principal neurotransmitters and the receptor families through which they act, with their synaptic actions and the drugs that bind them. ``Type'' distinguishes fast ionotropic channels from slower metabotropic G protein-coupled receptors (GPCRs), with the G protein noted where relevant. The receptors drawn on in this section are discussed in the prose above; the remaining subtypes are included to complete the picture. A dash marks a receptor for which no relevant drug is listed.}
+\begin{longtable}{L{2.9cm} L{2.4cm} L{1.8cm} L{1.9cm} L{4.0cm}}
+\caption{The principal neurotransmitters and the receptor families through which they act, with their synaptic actions and the drugs that bind them. ``Type'' distinguishes fast ionotropic channels from slower metabotropic G protein-coupled receptors (GPCRs), with the G protein noted where relevant. The receptors drawn on in this section are discussed in the prose above; the remaining subtypes are included to complete the picture. A dash marks a receptor for which no relevant drug is listed. Drugs that act on transporters or ion channels rather than receptors are listed separately in Table~\ref{tab:drugs}.}
 \label{tab:transmitters} \\
 \toprule
 \textbf{Neurotransmitter} & \textbf{Receptor} & \textbf{Type} & \textbf{Action} & \textbf{Drug (effect)} \\
@@ -625,22 +697,22 @@ The transmitters and receptor families met across this section are gathered in T
 \bottomrule
 \endlastfoot
 Glutamate & AMPA & Ionotropic & Excitatory & --- \\
- & NMDA & Ionotropic & Excitatory & Alcohol (antagonist) \\
+ & NMDA & Ionotropic & Excitatory & Alcohol, ketamine, nitrous oxide (antagonist) \\
  & Kainate & Ionotropic & Excitatory & --- \\
  & mGluR & GPCR & Modulatory & --- \\
 \midrule
-GABA & GABA\textsubscript{A} & Ionotropic & Inhibitory & Alcohol, benzodiazepines (positive allosteric modulator) \\
+GABA & GABA\textsubscript{A} & Ionotropic & Inhibitory & Alcohol, benzodiazepines, propofol, sevoflurane (positive allosteric modulator) \\
  & GABA\textsubscript{B} & GPCR & Inhibitory & --- (autoreceptor) \\
 \midrule
 Acetylcholine & Nicotinic & Ionotropic & Excitatory & Nicotine (agonist) \\
  & Muscarinic & GPCR & Modulatory & Muscarine (agonist); atropine (antagonist) \\
 \midrule
 Dopamine & D1 & GPCR (G\textsubscript{s}) & Excitatory & --- \\
- & D2 & GPCR (G\textsubscript{i}) & Inhibitory & --- (autoreceptor) \\
+ & D2 & GPCR (G\textsubscript{i}) & Inhibitory & Antipsychotics (antagonist); aripiprazole (partial agonist); autoreceptor \\
 \midrule
 Serotonin (5-HT) & 5-HT\textsubscript{1A} & GPCR & Inhibitory & CBD (agonist); somatodendritic autoreceptor \\
  & 5-HT\textsubscript{1B/1D} & GPCR & Inhibitory & --- (terminal autoreceptor) \\
- & 5-HT\textsubscript{2A} & GPCR & Excitatory & LSD, psilocin (partial agonist) \\
+ & 5-HT\textsubscript{2A} & GPCR & Excitatory & LSD, psilocin (partial agonist); atypical antipsychotics (antagonist) \\
  & 5-HT\textsubscript{3} & Ionotropic & Excitatory & Ondansetron (antagonist) \\
 \midrule
 Noradrenaline & $\alpha$\textsubscript{1} & GPCR (G\textsubscript{q}) & Excitatory & --- \\
@@ -653,6 +725,48 @@ Endocannabinoids (anandamide, 2-AG) & CB1 & GPCR (G\textsubscript{i}) & Inhibito
 Opioid peptides (endorphins, enkephalins) & $\mu$-opioid & GPCR (G\textsubscript{i}) & Inhibitory & Morphine, heroin (agonist) \\
 \midrule
 Adenosine & A\textsubscript{1}/A\textsubscript{2A} & GPCR & Modulatory & Caffeine (antagonist) \\
+\end{longtable}
+}
+
+The drug classes of the regulation subsection, which act on transporters, receptors, and ion channels rather than by imitating a transmitter, are gathered in Table~\ref{tab:drugs}.
+
+{\footnotesize
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{L{2.6cm} L{3.0cm} L{2.2cm} L{3.0cm} L{2.7cm}}
+\caption{The main classes of drug that regulate neurotransmission, with examples, their molecular target, how they act on it, and their principal uses. Brand names are given in brackets where they are the more familiar name.}
+\label{tab:drugs} \\
+\toprule
+\textbf{Class} & \textbf{Examples} & \textbf{Target} & \textbf{Action} & \textbf{Main uses} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\emph{\small Table~\ref{tab:drugs} continued from previous page}} \\
+\toprule
+\textbf{Class} & \textbf{Examples} & \textbf{Target} & \textbf{Action} & \textbf{Main uses} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+SSRI & Fluoxetine (Prozac), sertraline & SERT & Blocks serotonin reuptake & Depression, anxiety, OCD \\
+\midrule
+SNRI & Venlafaxine (Effexor), duloxetine (Cymbalta) & SERT, NET & Blocks serotonin and noradrenaline reuptake & Depression, anxiety, chronic pain \\
+\midrule
+NDRI & Bupropion (Wellbutrin) & NET, DAT & Blocks noradrenaline and dopamine reuptake & Depression, stopping smoking \\
+\midrule
+Stimulant (blocker) & Methylphenidate (Ritalin), cocaine & DAT, NET (cocaine also SERT) & Blocks reuptake & ADHD, narcolepsy (methylphenidate) \\
+\midrule
+Stimulant (releaser) & Amphetamine & DAT, NET, vesicle storage & Reverses the transporters, releasing dopamine and noradrenaline & ADHD, narcolepsy \\
+\midrule
+Typical antipsychotic & Chlorpromazine, haloperidol & D2 & Antagonist & Psychosis \\
+\midrule
+Atypical antipsychotic & Risperidone, olanzapine, quetiapine, clozapine & D2, 5-HT\textsubscript{2A} & Antagonist & Psychosis, bipolar disorder \\
+ & Aripiprazole & D2 & Partial agonist & Psychosis, bipolar disorder \\
+\midrule
+General anaesthetic & Propofol, sevoflurane & GABA\textsubscript{A} & Positive allosteric modulator & Surgical anaesthesia \\
+ & Ketamine, nitrous oxide & NMDA & Antagonist & Anaesthesia, pain relief; ketamine also depression \\
+\midrule
+Local anaesthetic & Lidocaine & Voltage-gated Na\textsuperscript{+} channel & Blocks the channel from inside & Local and regional anaesthesia \\
 \end{longtable}
 }
 
@@ -1206,7 +1320,7 @@ The second is the distinction between tonic and burst firing, which is as close 
 
 {\footnotesize
 \renewcommand{\arraystretch}{1.3}
-\begin{longtable}{p{2.7cm} p{2.9cm} p{3.3cm} p{2.6cm} p{2.2cm}}
+\begin{longtable}{L{2.7cm} L{2.9cm} L{3.3cm} L{2.6cm} L{2.2cm}}
 \caption{The principal thalamic nuclei, grouped as the internal medullary lamina divides them, with their major input, their cortical target, and the role each plays. The reticular nucleus is the sole entry with no cortical projection, which is what makes it the gate rather than a relay.}
 \label{tab:thalamus} \\
 \toprule
@@ -1677,7 +1791,7 @@ With this the ascent set out at the beginning is as complete as these notes can 
 
 {\footnotesize
 \renewcommand{\arraystretch}{1.3}
-\begin{longtable}{p{2.6cm} p{3.2cm} p{3.2cm} p{4.0cm}}
+\begin{longtable}{L{2.6cm} L{3.2cm} L{3.2cm} L{4.0cm}}
 \caption{The principal components of the limbic system, with their major connections and the role each plays. The named tracts are those visible in dissection and used throughout this section; several structures appear here and in earlier sections under other headings, and the cross-references in the prose identify where.}
 \label{tab:limbic} \\
 \toprule
