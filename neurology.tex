@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[a4paper, margin=1in, headheight=14pt]{geometry}
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -17,8 +17,8 @@
 \usepackage{hyperref}
 
 \hypersetup{
-colorlinks=false,
-linkcolor=blue,
+colorlinks=true,
+linkcolor=black,
 urlcolor=blue,
 citecolor=blue
 }
@@ -39,17 +39,6 @@ citecolor=blue
 \titleformat{\subsection}
 {\normalsize\bfseries}
 {\thesubsection}{1em}{}
-
-\usepackage{listings}
-\lstset{
-basicstyle=\ttfamily\small,
-breaklines=true,
-frame=single
-}
-
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\vct}[1]{\mathbf{#1}}
-\newcommand{\mat}[1]{\mathbf{#1}}
 
 % Placeholder for sections whose lecture has not yet been written up.
 \newcommand{\tobewritten}{\noindent\textit{To be written.}}
@@ -80,17 +69,19 @@ It is worth being precise, once, about which question is being asked, because tw
 
 The neurological sections that open these notes pursue the easy problems. They do so because that is where the neuroscience is, and because the progress there is genuinely remarkable and deserves to be laid out in order. The hard problem is named here and then deliberately held back: nothing in the neurological sections should be read as an attempt on it, and a reader who thinks it dissolves once the easy problems are solved, and a reader who thinks it survives untouched, can both use them, because they are an account of mechanism either way. Holding it back is a matter of order, not of dismissal. The hard problem cannot be posed sharply until it is clear exactly what a mechanistic account does deliver, and the neurology is what establishes that. Once it has, the later parts take the question up directly, along with the spiritual questions that sit close to it, and approach them with the same care as everything else: keeping clear what is established, what is argued, and what remains open, and not allowing the depth of a question to stand in for evidence about its answer.
 
-The method is to work up through levels. An ion has a concentration gradient; a channel has a conductance; a synapse has a strength; a neuron has a firing rate; a circuit has a computation; a nucleus has a function; a system has a capacity. Each level has its own vocabulary, and the vocabulary of one level does not appear at the level below: there is no fear in a sodium channel and no attention in a vesicle. What there is instead is a chain of explanation, in which each level is accounted for by the one beneath it. This is why a document about the mind opens with the Nernst equation and arrives, by the limbic system, at a bear on a woodland path, and why the equation turns out to be doing work in the bear.
+The method is to work up through levels. An ion has a concentration gradient; a channel has a conductance; a synapse has a strength; a neuron has a firing rate; a circuit has a computation; a nucleus has a function; a system has a capacity. Each level has its own vocabulary, and the vocabulary of one level does not appear at the level below: there is no fear in a sodium channel and no attention in a vesicle. What there is instead is a chain of explanation, in which each level is accounted for by the one beneath it. This is why a document about the mind opens with the Nernst equation, and why that equation is still doing work by the time the account reaches memory and fear.
 
 One claim recurs so often in what follows that it is worth naming in advance, so that it can be recognised each time it appears. It is that nothing about the mind is given. Seeing feels like opening the eyes and receiving the world; it is a construction performed in stages by cortex, and it fails in strikingly specific ways when particular stages are damaged. The sense of occupying a body in a place feels primitive and unanalysable; it is built, and it can be taken apart. Feeling an emotion feels like the most direct knowledge one has; it is assembled, late, out of a reading of the body's own state. In every case the immediacy is real as an experience and misleading as evidence, because the construction is invisible from the inside. That the seams do not show is a fact about the machinery, not about what the machinery is doing.
 
-The order of the sections follows the lecture series on which they are based, and falls into three movements. The first four sections establish the substrate: the layout of the nervous system, the structure of the neuron, the electrical and chemical events by which neurons signal, and the glial cells without which none of it works. The second movement follows the central nervous system from the top down: the meninges that wrap it, the lobes of the cortex, the thalamus and hypothalamus, the brainstem, the cerebellum, the cranial nerves, and finally the spinal cord. The cortical sections are where the constructive claim is made repeatedly and in detail, as sensation becomes perception, perception becomes recognition, and recognition becomes a world with a body in it; the thalamus and hypothalamus beneath them gate what reaches awareness and generate the drives that make anything worth doing. The third movement takes up the systems that run across this anatomy rather than sitting in one place within it: the basal ganglia, which select actions; the limbic system, which assigns to events the significance that makes any of them worth responding to; the autonomic nervous system, through which all of this reaches the body; and the pathway of taste. Some of these sections are not yet written and stand as headings, to be filled as the lectures are worked through. Together they form the neurological foundation of the study. The parts on psychiatry, psychedelics, and the philosophy of mind are to follow, and they build on that foundation rather than replace it: the serotonin receptor at which the psychedelics act is met in the section on neuron firing, and the picture of the self as a construction, which runs through the cortical sections, is where any later question about what the self finally is has to start.
+The order of the sections follows the lecture series on which they are based, and falls into three movements. The first four sections establish the substrate: the layout of the nervous system, the structure of the neuron, the electrical and chemical events by which neurons signal, and the glial cells without which none of it works. The second movement follows the central nervous system from the top down: the lobes of the cortex, then the thalamus and hypothalamus beneath them, the brainstem, the cerebellum, the cranial nerves, and finally the spinal cord. The cortical sections are where the constructive claim is made repeatedly and in detail, as sensation becomes perception, perception becomes recognition, and recognition becomes a world with a body in it; the thalamus and hypothalamus then gate what reaches awareness and generate the drives that make anything worth doing. The third movement takes up the systems that run across this anatomy rather than sitting in one place within it: the basal ganglia, which select actions; the limbic system, which assigns to events the significance that makes them worth responding to; and the autonomic and enteric nervous systems, through which all of this reaches the body. Some of these sections are not yet written and stand as headings, to be filled as the lectures are worked through.
+
+Together these sections form the neurological foundation of the study. The parts on psychiatry, psychedelics, and the philosophy of mind are to follow, and they build on that foundation rather than replace it: the serotonin receptor at which the psychedelics act is met in the section on neuron firing, and the picture of the self as a construction, which runs through the cortical sections, is where any later question about what the self finally is has to start.
 
 Within the neurology some things are absent. There is no developmental account and little on the cortical microcircuit, though both are touched where they illuminate something, and psychiatric illness, which has its own part to come, appears there only where it shows how the intact machinery works. Clinical material appears throughout, but as evidence rather than as medicine: a deficit that follows a specific lesion is the closest thing this subject has to a controlled experiment on the human mind, and the argument leans on that evidence heavily.
 
 \section{Nervous System Structure}
 
-Before we can talk about thoughts, feelings, memories, or the mind itself, we need a map. The nervous system is the organ that does all of this, it senses, decides, remembers, imagines, and like any complicated machine it helps enormously to know, at least roughly, where its parts are and what each part is for.
+Before we can talk about thoughts, feelings, memories, or the mind itself, we need a map. The nervous system is the organ that does all of this: it senses, decides, remembers, and imagines. Like any complicated machine, it helps enormously to know, at least roughly, where its parts are and what each part is for.
 
 At the highest level the system splits into two halves. The \textbf{central nervous system (CNS)} is the brain and the spinal cord: the headquarters, where information is integrated and decisions are made. The \textbf{peripheral nervous system (PNS)} is everything else, the sprawling network of nerves that links the CNS to muscles, glands, and sensory organs. Every sensation and every voluntary movement crosses the boundary between these two systems.
 
@@ -100,20 +91,21 @@ The rest of this section walks through the major structures of the CNS and PNS f
 
 The cerebrum is the familiar part of the brain, the wrinkled, walnut-shaped dome that sits on top of everything else. It is also, by some distance, the largest part of the brain and the part most closely associated with what we usually mean by ``the mind.'' Thinking, reasoning, memory, language, voluntary movement, the experience of being a self, all of these depend on cerebral machinery.
 
-Structurally it is symmetrical. Two hemispheres, left and right, are joined by a thick band of white matter called the \textbf{corpus callosum}, which lets them share information. Each hemisphere is then divided into four lobes, and each lobe has a characteristic job:
+Structurally it is symmetrical. Two hemispheres, left and right, are joined by a thick band of white matter called the \textbf{corpus callosum}, which lets them share information. Each hemisphere is divided into four lobes, with a fifth hidden beneath them, and each has a characteristic job:
 
 \begin{itemize}
-    \item \textbf{Frontal lobe}, voluntary movement, planning, decision-making, and much of what we call personality.
-    \item \textbf{Parietal lobe}, processing of bodily sensations such as touch, temperature, and pain, and spatial awareness.
-    \item \textbf{Temporal lobe}, hearing, language comprehension, and the formation of long-term memories.
-    \item \textbf{Occipital lobe}, vision.
+    \item \textbf{Frontal lobe}: voluntary movement, planning, decision-making, and much of what we call personality.
+    \item \textbf{Parietal lobe}: bodily sensations such as touch, temperature, and pain, and spatial awareness.
+    \item \textbf{Temporal lobe}: hearing, smell, language comprehension, and the formation of long-term memories.
+    \item \textbf{Occipital lobe}: vision.
+    \item \textbf{Insula}, hidden in the depths of the lateral sulcus: taste, the internal state of the body, and emotional awareness.
 \end{itemize}
 
 The outer layer of the cerebrum, the \textbf{cerebral cortex}, is only a few millimetres thick but is crumpled into deep folds. The folding is not cosmetic: by crumpling the sheet, evolution has packed far more cortical area into the skull than would otherwise fit, and cortical area turns out to matter enormously for cognitive capacity.
 
 \subsection{The Cerebellum}
 
-Tucked beneath the back of the cerebrum, the cerebellum (``little brain'') looks almost like a miniature version of its larger sibling. Despite its size, it contains roughly half of all the neurons in the brain, and it is indispensable for smooth, coordinated movement.
+Tucked beneath the back of the cerebrum, the cerebellum (``little brain'') looks almost like a miniature version of its larger sibling. Despite its size, it contains around four in every five of the brain's neurons, and it is indispensable for smooth, coordinated movement.
 
 Crucially, the cerebellum does not initiate actions. Instead it receives a copy of the motor commands being issued by the cortex together with sensory feedback about what the body is actually doing, and it compares the two. When the intention and the reality diverge, the cerebellum quietly corrects the discrepancy in real time. That is why skilled movements, reaching for a mug, playing a scale on the piano, walking in a straight line, feel effortless.
 
@@ -126,7 +118,7 @@ Between the cerebrum above and the brainstem below sits the \textbf{diencephalon
 It comprises four parts:
 
 \begin{itemize}
-    \item The \textbf{thalamus} is by far the largest, a pair of egg-shaped masses of grey matter sitting either side of the midline. It is the great relay station of the brain: with the single exception of smell, every sensory stream, vision, hearing, touch, taste, and the sense of the body's own position, synapses in a specific thalamic nucleus before continuing to the cortex. It is not a passive junction box. The thalamus gates what reaches the cortex according to attention and arousal, and it carries return traffic from the cortex back down as well, taking part in the motor and cognitive loops discussed later.
+    \item The \textbf{thalamus} is by far the largest, a pair of egg-shaped masses of grey matter sitting either side of the midline. It is the great relay station of the brain: with the single exception of smell, every sensory stream (vision, hearing, touch, taste, and the sense of the body's own position) synapses in a specific thalamic nucleus before continuing to the cortex. It is not a passive junction box. The thalamus gates what reaches the cortex according to attention and arousal, and it carries return traffic from the cortex back down as well, taking part in the motor and cognitive loops discussed later.
     \item The \textbf{hypothalamus} lies beneath the thalamus and is, for its size, the most consequential structure in the body. It is the master regulator of \textbf{homeostasis}, holding body temperature, fluid balance, hunger, thirst, and the sleep-wake cycle within viable limits. It commands the autonomic nervous system, and through its connection to the \textbf{pituitary gland} it also commands the endocrine system, which makes it the point at which the nervous and hormonal systems become one control problem rather than two.
     \item The \textbf{epithalamus} is a small posterior region whose principal component is the \textbf{pineal gland}. The pineal secretes \textbf{melatonin} on a daily rhythm and is central to the timing of the sleep-wake cycle.
     \item The \textbf{subthalamus} lies below the thalamus and contains the \textbf{subthalamic nucleus}, a small structure that plays a disproportionately large role in the control of movement, as the section on the basal ganglia sets out.
@@ -134,28 +126,28 @@ It comprises four parts:
 
 The diencephalon is therefore best understood not as one organ but as the junction at which the traffic between cortex, brainstem, and body is routed, filtered, and regulated. Damage here rarely produces a single clean deficit, precisely because so many separate pathways are packed into so small a volume.
 
-\subsection{The Midbrain and Brainstem}
+\subsection{The Brainstem}
 
 If the cerebrum is where thought happens and the cerebellum is where movement is refined, the brainstem is where life is sustained. It connects the brain to the spinal cord and is the conduit for almost every signal passing between them. It is also the home of the circuits that drive breathing, set the rhythm of the heart, and maintain consciousness itself.
 
 It is traditionally divided into three levels, each with distinct responsibilities:
 
 \begin{itemize}
-    \item \textbf{Midbrain}, visual and auditory reflexes, aspects of motor control, and arousal.
-    \item \textbf{Pons}, a relay between the cerebrum and cerebellum, and a participant in sleep and respiration.
-    \item \textbf{Medulla oblongata}, the control centre for vital autonomic functions: heart rate, blood pressure, breathing, coughing, swallowing.
+    \item \textbf{Midbrain}: visual and auditory reflexes, aspects of motor control, and arousal.
+    \item \textbf{Pons}: a relay between the cerebrum and cerebellum, and a participant in sleep and respiration.
+    \item \textbf{Medulla oblongata}: the control centre for vital autonomic functions: heart rate, blood pressure, breathing, coughing, swallowing.
 \end{itemize}
 
 Because the brainstem handles these non-negotiable tasks, even small lesions there can be catastrophic. A few millimetres in the wrong place can interrupt consciousness or stop breathing. This is also why brainstem death is used as a clinical definition of death.
 
 \subsection{Cranial Nerves}
 
-Most nerves reach the body via the spinal cord, but the twelve \textbf{cranial nerves} bypass that route and leave the CNS directly, mostly from the brainstem. They handle the close work of the head and neck, vision, eye movement, facial sensation and expression, taste, hearing, balance, swallowing, and, in the case of the vagus nerve, reach deep into the thorax and abdomen to regulate several visceral functions.
+Most nerves reach the body via the spinal cord, but the twelve \textbf{cranial nerves} bypass that route and leave the CNS directly, mostly from the brainstem. They handle the close work of the head and neck (vision, eye movement, facial sensation and expression, taste, hearing, balance, and swallowing), and in the case of the vagus nerve they reach deep into the thorax and abdomen to regulate several visceral functions.
 
 Each is conventionally numbered with a Roman numeral, running from front to back in the order the nerves emerge. Each is also classified as \textit{sensory}, \textit{motor}, or \textit{both}, according to the direction of the information it carries:
 
 \begin{itemize}
-    \item \textbf{I, Olfactory} (sensory). Carries smell. Uniquely among the cranial nerves it does not arise from the brainstem, projecting instead directly to the cerebrum, a peculiarity taken up in the section on the temporal lobe.
+    \item \textbf{I, Olfactory} (sensory). Carries smell. Like the optic nerve it does not arise from the brainstem, and smell is the one sense that reaches the cortex without first relaying in the thalamus, a peculiarity taken up in the section on the temporal lobe.
     \item \textbf{II, Optic} (sensory). Carries vision from the retina, partially crossing at the optic chiasm so that each hemisphere receives the opposite half of the visual field.
     \item \textbf{III, Oculomotor} (motor). Drives four of the six muscles that move the eye, raises the upper eyelid, and carries the parasympathetic fibres that constrict the pupil and focus the lens.
     \item \textbf{IV, Trochlear} (motor). Supplies a single muscle, the superior oblique, which turns the eye downward and inward. It is the thinnest cranial nerve and the only one to emerge from the back of the brainstem.
@@ -163,7 +155,7 @@ Each is conventionally numbered with a Roman numeral, running from front to back
     \item \textbf{VI, Abducens} (motor). Supplies the lateral rectus, which turns the eye outward.
     \item \textbf{VII, Facial} (both). Drives the muscles of facial expression, carries taste from the front two-thirds of the tongue, and supplies the glands that produce tears and saliva.
     \item \textbf{VIII, Vestibulocochlear} (sensory). Carries hearing from the cochlea and balance from the vestibular apparatus, in two divisions that travel together but report on quite different things.
-    \item \textbf{IX, Glossopharyngeal} (both). Carries taste and sensation from the back of the tongue and the pharynx, including the blood pressure and oxygen sensors of the carotid body, and contributes to swallowing.
+    \item \textbf{IX, Glossopharyngeal} (both). Carries taste and sensation from the back of the tongue and the pharynx, including the blood pressure sensors of the carotid sinus and the oxygen sensors of the carotid body, and contributes to swallowing.
     \item \textbf{X, Vagus} (both). By far the most widely distributed, wandering (as its name says) out of the head entirely to supply the heart, lungs, and most of the digestive tract. It is the principal parasympathetic nerve of the body, and it also drives the muscles of the larynx and pharynx that make speech and swallowing possible.
     \item \textbf{XI, Accessory} (motor). Supplies the sternocleidomastoid and trapezius, the muscles that turn the head and shrug the shoulders.
     \item \textbf{XII, Hypoglossal} (motor). Supplies the muscles of the tongue, and so underlies both speech and the manipulation of food in the mouth.
@@ -173,9 +165,9 @@ Their arrangement is diagnostically valuable. Because the nerves emerge in an or
 
 \subsection{Ventricles and Cerebrospinal Fluid}
 
-Inside the brain is a branching system of cavities called the \textbf{ventricles}: two lateral ventricles in the cerebral hemispheres, a third between them, and a fourth near the brainstem. They are filled with \textbf{cerebrospinal fluid (CSF)}, a clear fluid produced mostly by the \textit{choroid plexus} that lines them.
+Inside the brain is a branching system of cavities called the \textbf{ventricles}: two lateral ventricles in the cerebral hemispheres, a third between them, and a fourth between the brainstem and the cerebellum. They are filled with \textbf{cerebrospinal fluid (CSF)}, a clear fluid produced mostly by the \textit{choroid plexus} that lines them.
 
-It is tempting to think of CSF as just a liquid cushion, and that is certainly part of its job, the brain effectively floats in it, which dramatically reduces its effective weight and protects it against mechanical shock. But CSF also helps maintain a stable chemical environment around neurons and carries metabolic waste away from nervous tissue. It is manufactured in the ventricles, circulates out over the surface of the brain and spinal cord, and is eventually reabsorbed into the venous blood.
+It is tempting to think of CSF as just a liquid cushion, and that is certainly part of its job: the brain floats in it, which greatly reduces its effective weight and protects it against mechanical shock. But CSF also helps maintain a stable chemical environment around neurons and carries metabolic waste away from nervous tissue. It is manufactured in the ventricles, circulates out over the surface of the brain and spinal cord, and is eventually reabsorbed into the venous blood.
 
 When CSF flow is obstructed, the ventricles swell under pressure, a condition called \textbf{hydrocephalus}, which we will meet again when we talk about ependymal cells.
 
@@ -189,14 +181,16 @@ The cord is segmented, and each segment gives rise to a pair of \textbf{spinal n
 
 The peripheral nervous system extends from the CNS out into the rest of the body. Functionally, peripheral nerves are either \textbf{sensory (afferent)}, carrying information from the body back to the CNS, or \textbf{motor (efferent)}, carrying commands from the CNS out to muscles and glands.
 
-Motor control itself splits into two worlds. The \textbf{somatic nervous system} governs deliberate action: moving an arm, speaking, walking. The \textbf{autonomic nervous system} governs what proceeds without deliberation, heart rate, digestion, pupil size, sweating, blood pressure, and it does so through two opposing branches:
+Motor control itself splits into two worlds. The \textbf{somatic nervous system} governs deliberate action: moving an arm, speaking, walking. The \textbf{autonomic nervous system} governs what proceeds without deliberation (heart rate, digestion, pupil size, sweating, and blood pressure), and it does so through two opposing branches:
 
 \begin{itemize}
     \item The \textbf{sympathetic division} prepares the body for action: heart rate rises, pupils dilate, blood is shunted toward muscle. This is the ``fight or flight'' response.
     \item The \textbf{parasympathetic division} does the opposite: it slows the heart, promotes digestion, and generally encourages the body to conserve and repair. This is ``rest and digest.''
 \end{itemize}
 
-This division matters far beyond the textbook. The balance between sympathetic and parasympathetic activity is the physiological signature of emotional arousal, stress, and relaxation, and it is where neurology and psychology start to meet in earnest: a frightened mind produces a sympathetically driven body, and a calm body feeds back into a calmer mind.
+A third component, the \textbf{enteric nervous system}, is a semi-independent network of neurons in the wall of the gut, which runs digestion largely by itself while taking instructions from the other two.
+
+The division between sympathetic and parasympathetic matters far beyond the textbook. The balance between sympathetic and parasympathetic activity is the physiological signature of emotional arousal, stress, and relaxation, and it is where neurology and psychology start to meet in earnest: a frightened mind produces a sympathetically driven body, and a calm body feeds back into a calmer mind.
 
 \subsection{Summary}
 
@@ -207,7 +201,7 @@ It is worth being clear about what this map does and does not provide. It is an 
 
 \section{Neuron Structure}
 
-Neurons are the cells that make the nervous system a nervous system. Every tissue in the body signals in one way or another, but neurons have specialised for one job to an extreme degree: they move information, quickly and reliably, over long distances. Everything else about their biology, their shape, their metabolism, their internal traffic system, is bent toward that single purpose.
+Neurons are the cells that make the nervous system a nervous system. Every tissue in the body signals in one way or another, but neurons have specialised for one job to an extreme degree: they move information, quickly and reliably, over long distances. Everything else about their biology (their shape, their metabolism, their internal traffic system) is bent toward that single purpose.
 
 The most striking consequence of this specialisation is that neurons are \textbf{polarised}. They have a clearly defined input side and output side, and the whole architecture of the cell enforces one-way traffic. Understanding that shape is the first step toward understanding how neurons fire and communicate.
 
@@ -217,7 +211,7 @@ A neuron has three main regions, the \textbf{soma}, the \textbf{dendrites}, and 
 
 \subsubsection{Soma (Cell Body)}
 
-The soma is the neuron's headquarters. It contains the nucleus and most of the cell's organelles, and it is where proteins are manufactured, energy is managed, and the general business of being a living cell is transacted. In a real sense the soma is the only part of the neuron that looks like a generic animal cell, everything else is specialised out.
+The soma is the neuron's headquarters. It contains the nucleus and most of the cell's organelles, and it is where proteins are manufactured, energy is managed, and the general business of being a living cell is transacted. In a real sense the soma is the only part of the neuron that looks like a generic animal cell; everything else is specialised for signalling.
 
 Its most important computational job is \textbf{integration}. The soma, together with the axon hillock that we will meet in a moment, is where the neuron sums the inputs arriving on its dendrites and decides whether to fire. It is the place where ``many inputs'' becomes ``one decision.''
 
@@ -229,7 +223,7 @@ What arrives at a dendrite is not, at first, an electrical spike. It is a \texti
 
 \subsubsection{Axon}
 
-The axon is the output. It is a single long projection that leaves the soma and carries electrical signals away to whatever the neuron talks to next, another neuron, a muscle cell, a gland. Axons can be astonishingly long: the motor neurons running from the spinal cord to the foot are over a metre in length in an adult, all in a single cell.
+The axon is the output. It is a single long projection that leaves the soma and carries electrical signals away to whatever the neuron talks to next: another neuron, a muscle cell, or a gland. Axons can be astonishingly long: the motor neurons running from the spinal cord to the foot are over a metre in length in an adult, all in a single cell.
 
 Three regions of the axon are worth naming explicitly:
 
@@ -249,7 +243,7 @@ Neurons are unusually demanding cells. They need a constant supply of ion channe
 
 The nucleus holds the cell's DNA and controls gene expression. In neurons, that expression has to be finely tuned: the mix of receptors and channels a neuron produces is a large part of what determines its electrical character, which transmitters it responds to, how strongly, and what it releases in turn.
 
-Because a neuron is a permanent cell that is never replaced, this transcriptional control operates over the whole of a lifetime rather than across cell divisions. Gene expression in a neuron is also unusually responsive to the cell's own activity: patterns of firing feed back on which genes are transcribed, which is one of the routes by which experience leaves a lasting mark on the cell's properties.
+Because most neurons are never replaced, this transcriptional control operates over the whole of a lifetime rather than across cell divisions. Gene expression in a neuron is also unusually responsive to the cell's own activity: patterns of firing feed back on which genes are transcribed, which is one of the routes by which experience leaves a lasting mark on the cell's properties.
 
 \subsubsection{Rough Endoplasmic Reticulum (Nissl Substance)}
 
@@ -263,11 +257,11 @@ The Golgi apparatus takes proteins fresh from the rough ER, modifies them, sorts
 
 \subsection{Microtubules, Kinesin, and Dynein}
 
-Because a neuron's axon can be so long, ordinary diffusion is nowhere near fast enough to move molecules around inside it. Diffusion time scales with the square of distance, so a journey of a metre is not a hundred times slower than one of a centimetre but ten thousand times slower, on the order of decades. Neurons solve this by building a system of oriented tracks along which motor proteins actively haul their cargo.
+Because a neuron's axon can be so long, ordinary diffusion is nowhere near fast enough to move molecules around inside it. Diffusion time scales with the square of distance, so a journey of a metre is not a hundred times slower than one of a centimetre but ten thousand times slower, taking years at the very least. Neurons solve this by building a system of oriented tracks along which motor proteins actively haul their cargo.
 
 \subsubsection{Microtubules}
 
-The tracks are \textbf{microtubules}: rigid, polar tubes of the cytoskeleton that run the length of the axon and into the dendrites. They provide mechanical support and, crucially, a surface that motor proteins can walk along. The polarity matters, microtubules have distinct ``plus'' and ``minus'' ends, because it allows the cell to enforce direction on intracellular traffic.
+The tracks are \textbf{microtubules}: rigid, polar tubes of the cytoskeleton that run the length of the axon and into the dendrites. They provide mechanical support and, crucially, a surface that motor proteins can walk along. The polarity matters (microtubules have distinct ``plus'' and ``minus'' ends) because it allows the cell to enforce direction on intracellular traffic.
 
 \subsubsection{Kinesin and Dynein}
 
@@ -321,10 +315,10 @@ Beyond these classical transmitters are several groups that break the mould in o
     \item The \textbf{neuropeptides} are short chains of amino acids, larger and slower-acting than the transmitters above, and typically released alongside them rather than instead of them. They include \textbf{substance P}, which carries pain signals into the spinal cord, and the \textbf{endorphins} and \textbf{enkephalins}, the body's own opioids, which suppress those same signals and act on the receptors that morphine and its relatives exploit.
     \item The \textbf{purines}, chiefly \textbf{ATP} and its breakdown product \textbf{adenosine}, act as transmitters in their own right. Adenosine accumulates during waking and promotes sleep, which is the mechanism caffeine blocks.
     \item \textbf{Nitric oxide} is a dissolved gas rather than a packaged molecule. It cannot be stored in vesicles, so it is synthesised on demand and simply diffuses out through the membrane to act on neighbouring cells.
-    \item The \textbf{endocannabinoids} are lipid messengers, and like nitric oxide they are made when needed rather than stored. Their most striking feature is the direction in which they travel, which is the subject of the final part of the next section.
+    \item The \textbf{endocannabinoids} are lipid messengers, and like nitric oxide they are made when needed rather than stored. Their most striking feature is the direction in which they travel, which the next section takes up.
 \end{itemize}
 
-Whenever we later talk about a psychological phenomenon with a pharmacological correlate, depression treated with SSRIs, Parkinson's with L-DOPA, anxiety with benzodiazepines, we will be talking, in the end, about how a drug has tweaked one of these systems.
+Whenever we later talk about a psychological phenomenon with a pharmacological correlate (depression treated with SSRIs, Parkinson's disease with L-DOPA, anxiety with benzodiazepines), we will be talking, in the end, about how a drug has tweaked one of these systems.
 
 \subsection{Summary}
 
@@ -335,7 +329,7 @@ The feature to carry forward is the polarity. A neuron enforces one-way traffic,
 
 \section{Neuron Firing}
 
-So far we have been saying that neurons ``send signals.'' It is time to be concrete about what that actually means. A neuron does not have tiny wires or its own battery. What it has is a membrane, some ions, and some very cleverly controlled channels through which those ions can move. Everything we call neural activity, every perception, every thought, every movement, is ultimately some pattern of ions crossing membranes.
+So far we have been saying that neurons ``send signals.'' It is time to be concrete about what that actually means. A neuron does not have tiny wires or its own battery. What it has is a membrane, some ions, and some very cleverly controlled channels through which those ions can move. Everything we call neural activity (every perception, every thought, every movement) is ultimately some pattern of ions crossing membranes.
 
 This section builds the story up from the ground. We begin with the resting state: why an idle neuron has a voltage across its membrane at all. We then see how small, local disturbances (graded potentials) can add up to a threshold crossing, at which point a stereotyped, all-or-nothing \textbf{action potential} is born. Finally we follow that action potential down the axon to the synapse, where it triggers the chemical release we just described.
 
@@ -389,7 +383,7 @@ Notice where $-70$ mV sits in that list. The resting potential is close to $E_K$
 
 Before we reach the action potential, we need a smaller kind of signal: the \textbf{graded potential}. Graded potentials are the small, local changes in membrane voltage produced in dendrites and the soma by incoming synaptic input, and they are the raw material out of which the decision to fire is built.
 
-Three properties define them. They are \textit{graded}: their size depends on the size of the stimulus, not an all-or-nothing switch. They \textit{decay} with distance: they are passive spreads of voltage, and they get weaker the further they travel. And they \textit{summate}: if several graded potentials arrive at roughly the same time (temporal summation) or at nearby spots on the dendritic tree (spatial summation), their effects add together.
+Three properties define them. They are \textit{graded}: their size depends on the size of the stimulus, rather than being all-or-nothing. They \textit{decay} with distance: they are passive spreads of voltage, and they get weaker the further they travel. And they \textit{summate}: if several graded potentials arrive at roughly the same time (temporal summation) or at nearby spots on the dendritic tree (spatial summation), their effects add together.
 
 But where does the voltage change actually come from? A neurotransmitter molecule is not electrically interesting in itself; it carries no current across the membrane and it does not touch the ions on either side. Everything depends on what the transmitter binds to. Postsynaptic receptors come in two architecturally different kinds, and the difference between them accounts for most of the variety in how neurons influence one another.
 
@@ -427,11 +421,11 @@ The sequence runs as follows.
 
 Which direction the cascade pushes depends on which G protein the receptor is coupled to. Receptors coupled to \textbf{G\textsubscript{s}} (stimulatory) activate adenylyl cyclase, so cAMP rises and PKA is switched on. Receptors coupled to \textbf{G\textsubscript{i}} (inhibitory) suppress it, so cAMP falls. The same receptor architecture and the same transmitter can therefore produce opposite effects in two different cells, depending only on which G protein sits behind the receptor.
 
-The $\beta\gamma$ pair is not merely left over. It can act on its own, and in one case that matters a great deal it acts directly on ion channels: $\beta\gamma$ released by GABA\textsubscript{B} and by various monoamine receptors binds and opens a class of potassium channels known as \textbf{GIRK} channels. Potassium leaves, the cell hyperpolarises, and the membrane voltage has been changed by a metabotropic receptor without any second messenger being involved at all. This is a useful corrective to the tidy picture: metabotropic does not mean slow-and-indirect-only, it means the receptor and the channel are separate proteins.
+The $\beta\gamma$ pair is not merely left over. It can act on its own, and in one case that matters a great deal it acts directly on ion channels: $\beta\gamma$ released by GABA\textsubscript{B} and by various monoamine receptors binds and opens a class of potassium channels known as \textbf{GIRK} channels. Potassium leaves, the cell hyperpolarises, and the membrane voltage has been changed by a metabotropic receptor without any second messenger being involved at all. This is a useful corrective to the tidy picture: metabotropic does not have to mean slow and indirect; it means that the receptor and the channel are separate proteins.
 
 Three consequences of the whole arrangement matter. It is \textit{slow}: a cascade of several enzymatic steps takes hundreds of milliseconds to seconds, against the millisecond of an ionotropic synapse. It is \textit{amplifying}: one bound receptor activates many G proteins, each activated enzyme makes many molecules of second messenger, and so a small amount of transmitter produces a large intracellular effect. And it is \textit{modulatory} rather than commanding: the usual end result is not that the cell fires, but that the channels it already has are tuned to open more or less readily. A GPCR does not so much send a message as change how the cell reads its other messages.
 
-Most transmitters act on both kinds of receptor. Glutamate has metabotropic receptors alongside AMPA and NMDA; GABA has GABA\textsubscript{B} alongside GABA\textsubscript{A}; acetylcholine has muscarinic receptors alongside nicotinic. The neuromodulators met in the previous section, dopamine, serotonin, and noradrenaline, act almost entirely through GPCRs, which is precisely why they modulate rather than command.
+Most transmitters act on both kinds of receptor. Glutamate has metabotropic receptors alongside AMPA and NMDA; GABA has GABA\textsubscript{B} alongside GABA\textsubscript{A}; acetylcholine has muscarinic receptors alongside nicotinic. The neuromodulators met in the previous section (dopamine, serotonin, and noradrenaline) act almost entirely through GPCRs, which is precisely why they modulate rather than command.
 
 \subsubsection{How These Change the Membrane Voltage}
 
@@ -486,7 +480,7 @@ The spike unfolds as a short sequence of stages, each dominated by a different s
 
 \textbf{2. Depolarisation} (up to $\approx +30$ mV). Voltage-gated Na\textsuperscript{+} channels open in a positive-feedback avalanche: more sodium in means more depolarisation, which means more channels open. The voltage races upward toward $E_{Na}$.
 
-\textbf{3. Repolarisation.} Two things happen, slightly delayed. Sodium channels \textit{inactivate}, they physically plug themselves closed with an intrinsic gate, and voltage-gated potassium channels open. Potassium flows out and drags the voltage back down.
+\textbf{3. Repolarisation.} Two things happen, slightly delayed. Sodium channels \textit{inactivate} (they physically plug themselves closed with an intrinsic gate), and voltage-gated potassium channels open. Potassium flows out and drags the voltage back down.
 
 \textbf{4. Hyperpolarisation} ($\approx -80$ to $-90$ mV). Potassium channels are slow to shut, so K\textsuperscript{+} efflux briefly overshoots the resting potential, pulling the cell closer to $E_K$.
 
@@ -514,7 +508,7 @@ Many psychoactive drugs act here. Selective serotonin reuptake inhibitors (SSRIs
 
 \subsection{Refractory Periods}
 
-After an action potential, the neuron is not instantly ready to fire another. For a brief interval it refuses absolutely, and for a slightly longer interval it only reluctantly agrees. These intervals are the refractory periods, and they are not bugs, they are what keep nervous-system signalling clean.
+After an action potential, the neuron is not instantly ready to fire another. For a brief interval it refuses absolutely, and for a slightly longer interval it only reluctantly agrees. These intervals are the refractory periods, and they are not flaws but what keeps nervous-system signalling clean.
 
 \subsubsection{Absolute Refractory Period}
 
@@ -522,9 +516,9 @@ Immediately after a spike, no new action potential can be generated at any price
 
 \subsubsection{Relative Refractory Period}
 
-During the hyperpolarisation that follows, sodium channels have recovered but the cell is further from threshold than usual. Firing is possible, but it takes a stronger-than-normal stimulus to get there, and the deficit shrinks as the membrane drifts back toward rest. The consequence is that the relative refractory period does not block firing so much as price it: the strength of input required to trigger a second spike is a direct measure of how recently the first one occurred. Only an unusually strong input will fire the cell early in this window, so a neuron's firing rate ends up reflecting the intensity of what is driving it.
+During the hyperpolarisation that follows, sodium channels have largely recovered but the cell is further from threshold than usual. Firing is possible, but it takes a stronger-than-normal stimulus to get there, and the deficit shrinks as the membrane drifts back toward rest. The consequence is that the relative refractory period does not block firing so much as price it: the strength of input required to trigger a second spike is a direct measure of how recently the first one occurred. Only an unusually strong input will fire the cell early in this window, so a neuron's firing rate ends up reflecting the intensity of what is driving it.
 
-Together, these two periods do two crucial jobs. They ensure that action potentials propagate \textbf{in one direction only}, the region just behind a travelling spike is refractory, so the spike cannot double back, and they cap the maximum firing rate, forcing the nervous system to encode intensity through \textit{rate} and \textit{pattern} rather than amplitude.
+Together, these two periods do two crucial jobs. They ensure that action potentials propagate \textbf{in one direction only}, because the region just behind a travelling spike is refractory and the spike cannot double back; and they cap the maximum firing rate, forcing the nervous system to encode intensity through \textit{rate} and \textit{pattern} rather than amplitude.
 
 \subsection{Retrograde Signalling: Endocannabinoids}
 
@@ -602,7 +596,7 @@ The cannabis plant furnishes the neatest contrast in the whole section, because 
 
 It is worth ending with two of the most widely consumed psychoactive drugs in the world, precisely because neither is a mimic, and seeing why sharpens the definition. \textbf{Caffeine} works chiefly as an \textbf{antagonist} at \textbf{adenosine} receptors, the \textbf{A\textsubscript{1}} and \textbf{A\textsubscript{2A}} subtypes. Adenosine accumulates through the waking day and, acting on these receptors, promotes sleepiness; caffeine occupies the receptors without activating them, so the drowsiness signal is blocked. Caffeine does not imitate a transmitter, then. It removes a brake, and alertness is what is left when the brake is gone.
 
-\textbf{Alcohol} is diffuse in a different way, acting not at one clean site but across several, and again by modulation rather than mimicry. Its two principal actions are as a \textbf{positive allosteric modulator} of the \textbf{GABA\textsubscript{A}} receptor, the ionotropic chloride channel that is the brain's main inhibitory receptor, potentiating inhibition and producing sedation, and as an \textbf{antagonist} at the \textbf{NMDA} glutamate receptor, damping excitation. The \textbf{benzodiazepines} belong beside alcohol here as the tidier case: they too are positive allosteric modulators of GABA\textsubscript{A}, binding their own distinct site to make the receptor more responsive to the GABA already present, which is why they calm without directly opening the channel themselves. The general point closing the section is that ``acting at a receptor'' covers three quite different things, agonism, antagonism, and allosteric tuning, and only the first deserves the name of mimicry; the confusion of the three is the confusion of a drug that imitates a signal with one that merely blocks or bends it.
+\textbf{Alcohol} is diffuse in a different way, acting not at one clean site but across several, and again by modulation rather than mimicry. Its two principal actions are as a \textbf{positive allosteric modulator} of the \textbf{GABA\textsubscript{A}} receptor, the ionotropic chloride channel that is the brain's main inhibitory receptor, potentiating inhibition and producing sedation, and as an \textbf{antagonist} at the \textbf{NMDA} glutamate receptor, damping excitation. The \textbf{benzodiazepines} belong beside alcohol here as the tidier case: they too are positive allosteric modulators of GABA\textsubscript{A}, binding their own distinct site to make the receptor more responsive to the GABA already present, which is why they calm without directly opening the channel themselves. The general point closing the section is that ``acting at a receptor'' covers three quite different things (agonism, antagonism, and allosteric tuning), and only the first deserves the name of mimicry; the confusion of the three is the confusion of a drug that imitates a signal with one that merely blocks or bends it.
 
 \subsection{Summary}
 
@@ -614,7 +608,7 @@ The transmitters and receptor families met across this section are gathered in T
 
 {\footnotesize
 \renewcommand{\arraystretch}{1.3}
-\begin{longtable}{p{2.8cm} p{2.4cm} p{1.8cm} p{1.9cm} p{4.0cm}}
+\begin{longtable}{p{2.9cm} p{2.4cm} p{1.8cm} p{1.9cm} p{4.0cm}}
 \caption{The principal neurotransmitters and the receptor families through which they act, with their synaptic actions and the drugs that bind them. ``Type'' distinguishes fast ionotropic channels from slower metabotropic G protein-coupled receptors (GPCRs), with the G protein noted where relevant. The receptors drawn on in this section are discussed in the prose above; the remaining subtypes are included to complete the picture. A dash marks a receptor for which no relevant drug is listed.}
 \label{tab:transmitters} \\
 \toprule
@@ -665,7 +659,7 @@ Adenosine & A\textsubscript{1}/A\textsubscript{2A} & GPCR & Modulatory & Caffein
 
 \section{Glial Cells}
 
-Read a textbook written fifty years ago and it might describe neurons as the stars of the nervous system and glial cells as their stagehands, quiet, supportive, uninteresting. That view is now dead. Modern neuroscience treats glia as active participants: they shape synapses, regulate ions, feed neurons, defend the brain, build the insulation that makes fast signalling possible, and fail or misbehave in many of the diseases we most dread. A surprisingly large portion of what we might loosely call ``brain function'' is not neuronal at all.
+Read a textbook written fifty years ago and it might describe neurons as the stars of the nervous system and glial cells as their stagehands: quiet, supportive, and uninteresting. That view is now dead. Modern neuroscience treats glia as active participants: they shape synapses, regulate ions, feed neurons, defend the brain, build the insulation that makes fast signalling possible, and fail or misbehave in many of the diseases we most dread. A surprisingly large portion of what we might loosely call ``brain function'' is not neuronal at all.
 
 The word ``neuroglia'' literally means ``nerve glue,'' which was a reasonable guess in the nineteenth century and is a misleading one now. Structural support turns out to be among the least of what these cells do.
 
@@ -702,7 +696,7 @@ Their responsibilities divide into seven roles.
 
 \subsubsection{Satellite Cells}
 
-Satellite cells are the PNS cousins of astrocytes. They form a close-fitting envelope around the cell bodies of sensory and autonomic neurons inside peripheral \textbf{ganglia}, such as the dorsal root ganglia. Their functions overlap substantially with those of astrocytes, structural support, control of the local chemical environment, regulation of ion concentrations, modulation of excitability, but they act on a much smaller, more localised scale.
+Satellite cells are the PNS cousins of astrocytes. They form a close-fitting envelope around the cell bodies of sensory and autonomic neurons inside peripheral \textbf{ganglia}, such as the dorsal root ganglia. Their functions overlap substantially with those of astrocytes (structural support, control of the local chemical environment, regulation of ion concentrations, and modulation of excitability), but they act on a much smaller, more localised scale.
 
 Interest in satellite cells has grown sharply in recent years because of their role in chronic pain. Changes in satellite cell signalling are thought to contribute to the abnormal excitability of sensory neurons in persistent pain states, which makes them one of the more surprising targets on the emerging map of pain biology.
 
@@ -714,7 +708,7 @@ Oligodendrocytes are the myelinating glia of the CNS. Their name means ``cells w
 
 A single oligodendrocyte can myelinate segments of several different axons at once, reaching out a process to each and wrapping it repeatedly. This is one of the most important differences between CNS and PNS myelin: a Schwann cell commits itself to a single internode on a single axon, whereas one oligodendrocyte serves many. The arrangement is efficient, but it also means that the loss of a single oligodendrocyte strips myelin from several axons at once.
 
-Their jobs are closely linked. They \textbf{produce myelin}, layer upon layer of plasma membrane wrapped tightly around the axon. They also \textbf{support axonal health} in ways that go beyond simple insulation, damage to oligodendrocytes tends to cause damage to the axons they serve, even when the axons themselves are initially untouched. And they \textbf{organise the axonal membrane} into alternating \textbf{internodes} (myelinated) and \textbf{nodes of Ranvier} (bare gaps where voltage-gated sodium channels cluster).
+Their jobs are closely linked. They \textbf{produce myelin}, layer upon layer of plasma membrane wrapped tightly around the axon. They also \textbf{support axonal health} in ways that go beyond simple insulation: damage to oligodendrocytes tends to cause damage to the axons they serve, even when the axons themselves are initially untouched. And they \textbf{organise the axonal membrane} into alternating \textbf{internodes} (myelinated) and \textbf{nodes of Ranvier} (bare gaps where voltage-gated sodium channels cluster).
 
 The clustering of sodium channels at the nodes is what makes \textbf{saltatory conduction} possible. Instead of the action potential regenerating continuously at every point along the axon, it regenerates only at the nodes and effectively jumps from one to the next. The result is faster, more energy efficient, and more reliable.
 
@@ -730,7 +724,7 @@ The single most striking difference between the PNS and the CNS is that peripher
 
 \subsubsection{Myelin}
 
-Myelin is not a cell type in its own right, it is built by oligodendrocytes and Schwann cells, but its electrical role is specific enough to be worth setting out separately.
+Myelin is not a cell type in its own right (it is built by oligodendrocytes and Schwann cells), but its electrical role is specific enough to be worth setting out separately.
 
 Physically, myelin is a multilayered sheath of plasma membrane wrapped tightly around an axon, squeezing out almost all of its cytoplasm so that what remains is essentially a stack of lipid bilayers. The stack is heavily lipid-rich, which is why myelinated tissue looks pale and is called \textit{white matter}, and it contains a characteristic set of structural proteins.
 
@@ -754,13 +748,13 @@ Clinically, anything that obstructs CSF flow or overwhelms its reabsorption can 
 
 Microglia are the immune system of the CNS. They are unusual among glial cells in that they are not of ectodermal origin: they descend from the same mesodermal lineage as macrophages and other immune cells, and they migrate into the brain during early development. Once installed, they are essentially permanent residents.
 
-In their ``resting'' state, microglia are not really resting at all. Their processes extend, retract, and extend again, continuously surveying the local tissue for anything out of place, pathogens, debris, abnormally folded proteins, damaged cells, inappropriate synaptic structures. When they find something, they respond.
+In their ``resting'' state, microglia are not really resting at all. Their processes extend, retract, and extend again, continuously surveying the local tissue for anything out of place: pathogens, debris, abnormally folded proteins, damaged cells, and inappropriate synaptic structures. When they find something, they respond.
 
 \subsubsection{What Microglia Do}
 
 \paragraph{Immune surveillance.} This is the microglial baseline, and it is continuous rather than occasional. The processes described above sweep the surrounding tissue without pause, so that the whole volume of the brain falls under inspection on a timescale of hours despite the cells themselves barely moving. What they are testing for is anything that should not be there: a pathogen, the debris of a dead cell, a protein that has misfolded, a synapse that is no longer appropriate. Surveillance is therefore not a passive readiness to respond but the activity that occupies most of a microglial cell's life, and everything else in this list is what happens on the occasions when it finds something.
 
-\paragraph{Phagocytosis.} When activated, microglia engulf and digest dead cells, cellular debris, pathogens, and protein aggregates. They are the only professional phagocytes the CNS has.
+\paragraph{Phagocytosis.} Once activated, microglia engulf and digest dead cells, debris, pathogens, and protein aggregates. They are the principal professional phagocytes of the CNS.
 
 \paragraph{Inflammatory signalling.} Microglia release cytokines and chemokines to coordinate local inflammatory responses. In acute infection or injury this is protective. In chronic or excessive activation it is corrosive, and chronic microglial inflammation is increasingly implicated in neurodegenerative disease.
 
@@ -778,25 +772,20 @@ The two compartments solve the same problems with different cells.
 
 \paragraph{In the PNS:} Schwann cells myelinate (and non-myelinating Schwann cells envelop small axons); satellite cells support the cell bodies of ganglion neurons.
 
-The parallels are not perfect, but the functional principles are the same, control the environment, insulate the axons, defend the tissue, and each system has specialised cells for each role.
+The parallels are not perfect, but the functional principles are the same (control the environment, insulate the axons, defend the tissue), and each system has specialised cells for each role.
 
 \subsection{Summary}
 
 Glia are not the supporting cast of the nervous system. Astrocytes and satellite cells regulate the environment in which neurons live, holding ion concentrations, transmitter levels, and extracellular composition within the narrow bounds that electrical signalling requires, and supplying the energy substrates that neurons cannot store for themselves. Oligodendrocytes and Schwann cells produce the myelin without which fast conduction is impossible. Ependymal cells build and circulate the CSF. Microglia provide the standing immune defence of a compartment that the rest of the body's immune system cannot easily reach, and, with astrocytes, actively shape synapses rather than merely surrounding them. Glia also carry out most of the maintenance and repair of nervous tissue, including the regenerative capacity that distinguishes peripheral nerves from central ones. Neuronal activity is the visible half of the story, but none of it would be possible without this infrastructure, and any serious account of how the brain works, or of how it fails in disease, has to take the glial half seriously.
 
-One glial contribution matters more than the others for what follows, and it is myelin. The figures given above, roughly a hundred metres per second along a myelinated axon against perhaps one along a bare one of the same width, are the difference between a nervous system that can act on the world and one that can only comment on it afterwards. A signal from the foot reaches the brain in something like twenty milliseconds, and a response returns on a similar schedule, which is why balance is possible and why a stumble can be caught. Without that speed the same computations would still be correct and would arrive too late to be of use. Much of what the later sections describe, the binding of vision to touch into a single scene, the interception of a movement before it is completed, the fast appraisal of a threat, presupposes that signals cross the brain in milliseconds rather than seconds. Cognition happens in real time because glia make the wiring fast enough, and that is an achievement of insulation rather than of computation.
-
-
-\section{The Meninges}
-
-\tobewritten
+One glial contribution matters more than the others for what follows, and it is myelin. The figures given above, roughly a hundred metres per second along a myelinated axon against perhaps one along a bare one of the same width, are the difference between a nervous system that can act on the world and one that can only comment on it afterwards. A signal from the foot reaches the brain in something like twenty milliseconds, and a response returns on a similar schedule, which is why balance is possible and why a stumble can be caught. Without that speed the same computations would still be correct and would arrive too late to be of use. Much of what the later sections describe (the binding of vision to touch into a single scene, the interception of a movement before it is completed, the fast appraisal of a threat) presupposes that signals cross the brain in milliseconds rather than seconds. Cognition happens in real time because glia make the wiring fast enough, and that is an achievement of insulation rather than of computation.
 
 
 \section{The Frontal Lobe}
 
 We now have a working model of individual neurons, the signals they generate, and the glial tissue that supports them. The remaining sections move up to the systems level, beginning with the region that has, more than any other, been identified with personhood itself.
 
-The \textbf{frontal lobe} is the largest of the cerebral lobes and sits just behind the forehead. It is responsible for voluntary movement, the planning and execution of actions, language production, and a cluster of higher cognitive and behavioural functions we collectively call \textit{executive function}, judgment, decision-making, inhibition, personality. If the occipital lobe is where vision lives and the temporal lobe is where memory and hearing live, the frontal lobe is where thought is translated into action, and where action is held back in the service of longer-term goals.
+The \textbf{frontal lobe} is the largest of the cerebral lobes and sits just behind the forehead. It is responsible for voluntary movement, the planning and execution of actions, language production, and a cluster of higher cognitive and behavioural functions we collectively call \textit{executive function}: judgment, decision-making, inhibition, and personality. If the occipital lobe is where vision lives and the temporal lobe is where memory and hearing live, the frontal lobe is where thought is translated into action, and where action is held back in the service of longer-term goals.
 
 It is also the region most implicated in the overlap between neurology and psychology, which makes it the natural place to begin the survey of the cortex. Damage to different parts of the frontal lobe produces characteristic and sometimes startling changes in behaviour and personality, changes that force us to confront how thoroughly the ``mind'' is rooted in very specific pieces of tissue.
 
@@ -836,17 +825,17 @@ What makes the homunculus so striking visually is that it is wildly disproportio
 
 \subsubsection{Microanatomy}
 
-M1 contains exceptionally large pyramidal neurons called \textbf{Betz cells}, which project long axons into the corticospinal tract described above. These are among the biggest neurons in the entire CNS, and the size is not incidental: a cell body must support an axon reaching from the cortex to the lower spinal cord, over a metre in an adult, and sustain the transport traffic that such a projection demands.
+M1 contains exceptionally large pyramidal neurons called \textbf{Betz cells}, which project long axons into the corticospinal tract described above. These are among the biggest neurons in the entire CNS, and the size is not incidental: a cell body must support an axon reaching from the cortex to the lower spinal cord, over a metre in an adult, and keep the kinesin and dynein traffic described in the section on neuron structure running along the whole of it.
 
-Their size is best understood against the transport problem described earlier: a cell sustaining an axon of that length must manufacture everything its distant terminals consume and keep the kinesin and dynein traffic running along the whole of it, and the soma is scaled to that burden. Betz cells are nonetheless only part of the story, accounting for a small fraction of corticospinal fibres; most of the tract arises from smaller pyramidal neurons alongside them.
+Betz cells are nonetheless only part of the story, accounting for a small fraction of corticospinal fibres; most of the tract arises from smaller pyramidal neurons alongside them.
 
 \subsection{Motor Association Cortex: Premotor and Supplementary Motor Areas}
 
 Immediately anterior to M1 lies the \textbf{motor association cortex} (Brodmann area 6), which is itself divided into two main regions: the \textbf{premotor cortex} on the lateral surface and the \textbf{supplementary motor area (SMA)} on the medial surface. These are the areas where movements are \textit{planned} rather than executed. A useful way to think about them is that M1 decides how to move, and the motor association cortex decides what to move and in what order.
 
-Their jobs include sequencing complex movements, coordinating the body so that posture and proximal muscles are prepared before the main action begins, and integrating sensory input into motor plans. There is a division of labour between them that is clinically worth remembering: the \textbf{supplementary motor area} is particularly important for \textit{internally generated} and \textit{bimanually coordinated} movements, movements arising from internal intention rather than external prompting, and those requiring both hands to cooperate, while the \textbf{premotor cortex} is more involved in movements \textit{cued by external stimuli}, such as reaching for an object that has just come into view.
+Their jobs include sequencing complex movements, coordinating the body so that posture and proximal muscles are prepared before the main action begins, and integrating sensory input into motor plans. There is a division of labour between them that is clinically worth remembering: the \textbf{supplementary motor area} is particularly important for \textit{internally generated} and \textit{bimanually coordinated} movements (those arising from internal intention rather than external prompting, and those requiring both hands to cooperate), while the \textbf{premotor cortex} is more involved in movements \textit{cued by external stimuli}, such as reaching for an object that has just come into view.
 
-Damage to these areas typically does not produce paralysis. It produces \textbf{apraxia}: a striking dissociation in which strength and coordination are intact, but the patient cannot perform learned purposeful movements on request. Asked to wave goodbye or mime brushing their teeth, they fumble. They still have the ``how,'' in the low-level sense, but they have lost the ``what'', the motor plan. It is one of the cleanest demonstrations in neurology that planning and executing a movement live in different places.
+Damage to these areas typically does not produce paralysis. It produces \textbf{apraxia}: a striking dissociation in which strength and coordination are intact, but the patient cannot perform learned purposeful movements on request. Asked to wave goodbye or mime brushing their teeth, they fumble. They still have the ``how'' in the low-level sense, but they have lost the ``what'': the motor plan. It is one of the cleanest demonstrations in neurology that planning and executing a movement live in different places.
 
 \subsection{Frontal Eye Field}
 
@@ -856,9 +845,9 @@ The FEF is the cortical route by which attention is directed through the eyes: w
 
 \subsection{Broca's Area}
 
-In the \textbf{inferior frontal gyrus} of the dominant hemisphere, which is almost always the left, even in most left-handers, lies \textbf{Broca's area}, corresponding to Brodmann areas 44 and 45. It is the part of the brain most closely associated with the \textit{production} of language. It plans the motor sequences of speech, handles much of the grammar and sentence structure, and coordinates the muscles of the tongue, lips, larynx, and diaphragm that actually do the talking.
+In the \textbf{inferior frontal gyrus} of the dominant hemisphere (almost always the left, even in most left-handers) lies \textbf{Broca's area}, corresponding to Brodmann areas 44 and 45. It is the part of the brain most closely associated with the \textit{production} of language. It plans the motor sequences of speech, handles much of the grammar and sentence structure, and coordinates the muscles of the tongue, lips, larynx, and diaphragm that actually do the talking.
 
-Damage to Broca's area produces \textbf{Broca's aphasia} (also called expressive or non-fluent aphasia). The clinical picture is characteristic and often heartbreaking: speech is slow, effortful, and telegraphic, content words survive, grammatical glue words drop out, and patients know, agonisingly, that what they are saying is not what they mean. Comprehension is relatively preserved, which is what distinguishes Broca's aphasia from the fluent but empty speech of Wernicke's aphasia, whose lesion lies further back in the temporal lobe.
+Damage to Broca's area produces \textbf{Broca's aphasia} (also called expressive or non-fluent aphasia). The clinical picture is characteristic and often heartbreaking: speech is slow, effortful, and telegraphic; content words survive while grammatical glue words drop out; and patients know, agonisingly, that what they are saying is not what they mean. Comprehension is relatively preserved, which is what distinguishes Broca's aphasia from the fluent but empty speech of Wernicke's aphasia, whose lesion lies further back in the temporal lobe.
 
 Broca's area is also a reminder that cortical function is \textbf{lateralised}. The two hemispheres are not functional mirror images of one another. Language production sits overwhelmingly on the left for most people, while analogous regions on the right handle things like prosody and emotional tone.
 
@@ -936,7 +925,7 @@ The three Brodmann subdivisions of S1 are not redundant. \textbf{Area 3} is the 
 
 Behind S1, on the \textbf{superior parietal lobule}, lies the \textbf{somatosensory association cortex}, corresponding to \textbf{Brodmann areas 5 and 7}. Where S1 registers raw sensation, the association cortex \textit{interprets} it. It takes the disjointed feel of edges, textures, weights, and contours arriving from S1 and assembles them into the recognition of objects, the sense of one's body shape, and the awareness of where each limb is in space.
 
-A useful way to put it is that S1 registers \textit{that} something is touching the body and \textit{where}, while the association cortex determines \textit{what it is}. Identifying a key in a pocket without looking, distinguishing a coin from a button by feel, judging the heft of a tool well enough to use it, all of this is somatosensory association cortex at work. It also stores tactile memories, so that the feel of familiar objects becomes immediately recognisable rather than having to be reconstructed from scratch each time.
+A useful way to put it is that S1 registers \textit{that} something is touching the body and \textit{where}, while the association cortex determines \textit{what it is}. Identifying a key in a pocket without looking, distinguishing a coin from a button by feel, judging the heft of a tool well enough to use it: all of this is somatosensory association cortex at work. It also stores tactile memories, so that the feel of familiar objects becomes immediately recognisable rather than having to be reconstructed from scratch each time.
 
 Damage to this region produces a striking deficit known as \textbf{tactile agnosia}, or, when restricted to a hand, \textbf{astereognosis}. Strength is intact, primary sensation is intact, and the patient can describe the temperature, texture, and shape of an object placed in the hand, but cannot identify what the object is. The raw materials of perception are present; the act of recognition has been severed from them. As with the motor association cortex's apraxia, this is a clean dissociation between low-level capability and the higher-level integration that makes it useful.
 
@@ -950,9 +939,9 @@ Its position explains its function. Three great streams of processed information
 
 The most conspicuous product of that binding is a representation of \textbf{space}. The posterior association area constructs where things are, where the body is among them, and how the two relate, holding this in several frames at once, some anchored to the body and some to the world. This is what allows a hand to reach accurately for a cup without being watched, a body to pass through a doorway without striking the frame, a moving object to be tracked while the head turns, and a room to be experienced as stable even though the retinal image lurches with every saccade.
 
-Bound up with space is \textbf{attention}. The area is a major node in the brain's attention network, working with the frontal eye field to decide which part of the environment matters next. It is also the destination of the visual \textbf{dorsal stream} described in the occipital lobe section, the ``where'' and ``how'' pathway, and it is here that seeing is converted into the coordinates a movement can actually use, so that a reach or a grasp arrives where the object is rather than where it merely appeared.
+Bound up with space is \textbf{attention}. The area is a major node in the brain's attention network, working with the frontal eye field to decide which part of the environment matters next. It is also the destination of the visual \textbf{dorsal stream} (the ``where'' and ``how'' pathway, which the occipital lobe section describes), and it is here that seeing is converted into the coordinates a movement can actually use, so that a reach or a grasp arrives where the object is rather than where it merely appeared.
 
-Two further contributions are worth naming. The area maintains the \textbf{body schema}, the continuously updated model of the body's shape, posture, and extent that makes the body feel like a single owned object rather than a collection of limbs. And through the \textbf{angular gyrus}, which sits at the junction proper and adjoins the language cortex met in the temporal lobe, it forms the bridge from perception to \textbf{symbol}: the step at which a seen mark becomes a letter, a heard pattern becomes a word, and a quantity becomes a number.
+Two further contributions are worth naming. The area maintains the \textbf{body schema}, the continuously updated model of the body's shape, posture, and extent that makes the body feel like a single owned object rather than a collection of limbs. And through the \textbf{angular gyrus}, which sits at the junction proper and adjoins the language cortex of the temporal lobe, it forms the bridge from perception to \textbf{symbol}: the step at which a seen mark becomes a letter, a heard pattern becomes a word, and a quantity becomes a number.
 
 Like the frontal lobe, the posterior association area is strongly \textbf{lateralised}. The right hemisphere carries the heavier load for spatial and attentional processing, tending to attend to both sides of space, while the left is more involved in the language-related and symbolic operations of the angular gyrus, in calculation, and in the ordered representation of learned actions. This asymmetry is functional rather than absolute, and the two sides work together through the corpus callosum, but it is a real division of labour and it explains why the region's contributions cannot be understood as a single uniform capacity.
 
@@ -971,7 +960,7 @@ If the frontal lobe turns intention into action and the parietal lobe turns sens
 
 \subsection{Anatomical Landmarks}
 
-The temporal lobe sits below the lateral sulcus and forwards of the occipital lobe, occupying roughly the lower-side of each hemisphere. Its principal external landmarks are three roughly parallel gyri running along its lateral surface:
+The temporal lobe sits below the lateral sulcus and forwards of the occipital lobe, occupying roughly the lower side of each hemisphere. Its principal external landmarks are three roughly parallel gyri running along its lateral surface:
 
 \begin{itemize}
     \item The \textbf{superior temporal gyrus}, immediately below the lateral sulcus, contains the auditory cortices and the receptive language area in the dominant hemisphere.
@@ -993,13 +982,13 @@ A1 is not a featureless sheet either. It is organised \textbf{tonotopically}: di
 
 \subsection{Auditory Association Cortex}
 
-Surrounding A1 on the superior temporal gyrus, and corresponding to most of \textbf{Brodmann area 22}, lies the \textbf{auditory association cortex}. Where A1 registers raw sound, the association cortex \textit{interprets} it: it recognises the sound as speech, music, a familiar voice, a doorbell, or a piece of meaningless noise. It is also the region that gives auditory experience much of its temporal structure, the perception of rhythm, melody, and the patterning of language at the level of pure sound.
+Surrounding A1 on the superior temporal gyrus, and corresponding to most of \textbf{Brodmann area 22}, lies the \textbf{auditory association cortex}. Where A1 registers raw sound, the association cortex \textit{interprets} it: it recognises the sound as speech, music, a familiar voice, a doorbell, or a piece of meaningless noise. It is also the region that gives auditory experience much of its temporal structure: the perception of rhythm, melody, and the patterning of language at the level of pure sound.
 
-Damage to the auditory association cortex produces \textbf{auditory agnosia}, a deficit analogous to the tactile agnosia of the parietal lobe. The patient hears: pure-tone audiometry is intact, A1 is doing its job, sound is consciously perceived, but recognition has been severed from perception. Specific subtypes are clinically recognised. \textbf{Pure word deafness} leaves the patient unable to understand spoken language while still able to hear, read, write, and speak normally; non-speech sounds are recognised, but speech is reduced to noise. \textbf{Amusia} leaves the patient unable to recognise melodies that were once familiar, or, in some cases, unable to perceive music as music at all. As with other association-cortex syndromes, what has been lost is not the input but the act of making the input meaningful.
+Damage to the auditory association cortex produces \textbf{auditory agnosia}, a deficit analogous to the tactile agnosia of the parietal lobe. The patient hears (pure-tone audiometry is normal and sound is consciously perceived), but recognition has been severed from perception. Specific subtypes are clinically recognised. \textbf{Pure word deafness} leaves the patient unable to understand spoken language while still able to hear, read, write, and speak normally; non-speech sounds are recognised, but speech is reduced to noise. \textbf{Amusia} leaves the patient unable to recognise melodies that were once familiar, or, in some cases, unable to perceive music as music at all. As with other association-cortex syndromes, what has been lost is not the input but the act of making the input meaningful.
 
 \subsection{Primary Olfactory Cortex}
 
-Smell is the odd one out among the senses, and the temporal lobe is where its peculiarity is on display. The \textbf{primary olfactory cortex} sits on the medial surface of the temporal lobe, primarily on the \textbf{uncus} and adjacent piriform cortex, and includes parts of the \textbf{piriform cortex}, periamygdaloid cortex, and amygdala. Its inputs come from the \textbf{olfactory bulb} via the \textbf{olfactory tract (CN I)}, the only cranial nerve that connects directly to the cerebrum without first passing through the brainstem.
+Smell is the odd one out among the senses, and the temporal lobe is where its peculiarity is on display. The \textbf{primary olfactory cortex} sits on the medial surface of the temporal lobe, around the \textbf{uncus}, and comprises the \textbf{piriform cortex}, the periamygdaloid cortex, and parts of the amygdala. Its input comes from the \textbf{olfactory bulb}, which receives the olfactory nerve (CN I), by way of the \textbf{olfactory tract}.
 
 What makes olfaction unusual is that, alone among the major senses, it does not relay through the thalamus before reaching cortex. Olfactory receptor neurons in the nasal epithelium project to the olfactory bulb, the bulb projects to the primary olfactory cortex directly, and only \textit{after} this initial cortical processing does smell information reach the thalamus and the orbitofrontal cortex for further integration. This shortcut is part of why smell has such an immediate, unmediated quality, and why it is so tightly bound to emotion and memory: the primary olfactory cortex is essentially continuous with the limbic system.
 
@@ -1013,13 +1002,15 @@ Damage here produces the recognition counterpart to anosmia: smells are still co
 
 \subsection{Wernicke's Area}
 
-In the \textbf{posterior part of the superior temporal gyrus} of the dominant hemisphere, almost always the left, lies \textbf{Wernicke's area}, traditionally identified with the posterior portion of \textbf{Brodmann area 22}. It is the part of the brain most closely associated with the \textit{comprehension} of language. If Broca's area, in the inferior frontal gyrus, is where the motor plans for speech are assembled, Wernicke's area is where heard and read words become understood meaning.
+In the \textbf{posterior part of the superior temporal gyrus} of the dominant hemisphere (almost always the left) lies \textbf{Wernicke's area}, traditionally identified with the posterior portion of \textbf{Brodmann area 22}. It is the part of the brain most closely associated with the \textit{comprehension} of language. If Broca's area, in the inferior frontal gyrus, is where the motor plans for speech are assembled, Wernicke's area is where heard and read words become understood meaning.
 
 Anatomically, Wernicke's area sits where it does for a reason: it is right next door to the auditory association cortex, perfectly placed to interpret the patterned sounds of speech, and it is connected to Broca's area by a long-range white-matter tract called the \textbf{arcuate fasciculus}. The arcuate fasciculus is what allows the comprehended word to be turned, almost without effort, into the spoken word: it ferries information from the back of the language network to the front.
 
+Damage to Wernicke's area produces \textbf{Wernicke's aphasia} (also called receptive or fluent aphasia), the mirror image of Broca's. Speech flows easily, with normal rhythm and much of its grammar intact, but it is empty of sense: words are swapped for wrong or invented ones, and comprehension of what others say is poor. Patients are often unaware that anything is wrong, because the system that would check whether speech makes sense is the one that has been damaged.
+
 \subsection{Summary}
 
-The temporal lobe is where the brain turns sound into meaning, smell into memory, and heard speech into understood language. The primary auditory cortex on Heschl's gyri receives the bilateral output of the auditory pathway and arranges it tonotopically; the auditory association cortex of the superior temporal gyrus turns that raw sound into recognisable speech, music, and familiar voices. The primary olfactory cortex on the uncus, alone among the senses, receives its input directly without a thalamic relay, and the olfactory association cortex of the entorhinal region binds smell to memory and emotion through its links with hippocampus and amygdala. Finally, Wernicke's area in the dominant superior temporal gyrus stands at the centre of language comprehension, paired with Broca's area through the arcuate fasciculus to form the language network. Damage at each of these levels produces a characteristic deficit, from cortical deafness and anosmia through the auditory and olfactory agnosias. Together, the temporal lobe is where the mind acquires much of its capacity for meaning.
+The temporal lobe is where the brain turns sound into meaning, smell into memory, and heard speech into understood language. The primary auditory cortex on Heschl's gyri receives the bilateral output of the auditory pathway and arranges it tonotopically; the auditory association cortex of the superior temporal gyrus turns that raw sound into recognisable speech, music, and familiar voices. The primary olfactory cortex on the uncus, alone among the senses, receives its input directly without a thalamic relay, and the olfactory association cortex of the entorhinal region binds smell to memory and emotion through its links with hippocampus and amygdala. Finally, Wernicke's area in the dominant superior temporal gyrus stands at the centre of language comprehension, paired with Broca's area through the arcuate fasciculus to form the language network. Damage at each of these levels produces a characteristic deficit: cortical deafness after bilateral damage to primary auditory cortex, the auditory and olfactory agnosias of the association cortices, and Wernicke's aphasia. Taken together, the temporal lobe is where the mind acquires much of its capacity for meaning.
 
 The capacity added here is recognition, and the agnosias show it to be a separate operation rather than a strong form of perception. A patient with pure word deafness has intact hearing and intact language, and speech reaches them as noise; the sound arrives and the meaning does not, and the two can be severed because they were never the same thing. Recognition is a further step performed on a signal already fully received. This is the point at which the account acquires the difference between a system that registers what is present and one for which anything is \textit{about} something, and it is a step that primary cortex, however intact, does not take.
 
@@ -1028,7 +1019,7 @@ The capacity added here is recognition, and the agnosias show it to be a separat
 
 We come now to the back of the brain, and to the simplest of the cerebral lobes to describe in terms of what it does. The \textbf{occipital lobe} is, almost in its entirety, the cortex of \textit{vision}. Almost everything the brain does with the light that enters the eye, beyond the very earliest processing in the retina and thalamus, begins here.
 
-If the temporal lobe gives sensation its meaning and the parietal lobe gives it its place, the occipital lobe gives the visual world its existence as a coherent scene at all. From the patterned firing of retinal ganglion cells, the occipital lobe reconstructs edges, surfaces, motion, depth, colour, and form, and hands the result on to the rest of the brain for use. Damage to it does not produce subtle deficits of recognition or naming; it produces, in its purest form, the inability to see.
+If the temporal lobe gives sensation its meaning and the parietal lobe gives it its place, the occipital lobe gives the visual world its existence as a coherent scene at all. From the patterned firing of retinal ganglion cells, the occipital lobe reconstructs edges, surfaces, motion, depth, colour, and form, and hands the result on to the rest of the brain for use. Damage to its primary cortex does not produce subtle deficits of recognition or naming; it produces, in its purest form, the inability to see.
 
 \subsection{Anatomical Landmarks}
 
@@ -1062,7 +1053,7 @@ V1 has two anatomical features worth knowing by name. It is called the \textit{s
 
 \subsection{Visual Association Cortex}
 
-Surrounding V1, and occupying most of the rest of the occipital lobe, is the \textbf{visual association cortex}, corresponding to \textbf{Brodmann areas 18 and 19} (often referred to as \textbf{V2}, \textbf{V3}, and beyond). Where V1 registers the basic features of the visual world, edges, orientations, contrasts, motion direction, the association cortex \textit{interprets} that early activity and assembles it into the world we actually experience: recognisable objects, faces, scenes, motion, and depth.
+Surrounding V1, and occupying most of the rest of the occipital lobe, is the \textbf{visual association cortex}, corresponding to \textbf{Brodmann areas 18 and 19} (often referred to as \textbf{V2}, \textbf{V3}, and beyond). Where V1 registers the basic features of the visual world (edges, orientations, contrasts, and motion direction), the association cortex \textit{interprets} that early activity and assembles it into the world we actually experience: recognisable objects, faces, scenes, motion, and depth.
 
 A great deal of what we know about visual association cortex is captured by the idea that it splits, beyond the immediate surroundings of V1, into \textbf{two streams}, each running into a different lobe. The \textbf{ventral stream} (sometimes called the ``what'' pathway) runs forward from the occipital lobe into the inferior temporal cortex; it specialises in object and face recognition, colour, and form. The \textbf{dorsal stream} (the ``where'' or ``how'' pathway) runs upward into the posterior parietal cortex; it specialises in motion, depth, spatial relationships, and the visuomotor transformations that convert a seen object into a reach toward it. The two streams are not completely independent, and the simple ``what versus where'' summary is something of an oversimplification, but it captures a real anatomical and functional division.
 
@@ -1072,14 +1063,14 @@ These syndromes, taken together, make the same point that the agnosias of the pa
 
 \subsection{Summary}
 
-The occipital lobe is where light becomes vision. The primary visual cortex around the calcarine sulcus receives the heavily processed output of the retina and lateral geniculate nucleus, lays it out as a contralateral, retinotopic, and macula-magnified map, and performs the earliest cortical analysis of edges, orientation, contrast, and motion. The visual association cortex surrounding it interprets that early work and splits into a ventral ``what'' stream that runs into the temporal lobe to recognise objects and faces, and a dorsal ``where'' stream that runs into the parietal lobe to track motion, space, and the visual control of action. Damage at each level produces a characteristic deficit: visual field defects from V1 lesions, cortical blindness from bilateral V1 damage, and the cleanly dissociable agnosias, prosopagnosia, akinetopsia, achromatopsia, object agnosia, from damage to specific patches of association cortex. The occipital lobe is the clearest demonstration we have that even something as immediate as ``seeing the world'' is not given by the eye but constructed, in stages, by cortex.
+The occipital lobe is where light becomes vision. The primary visual cortex around the calcarine sulcus receives the heavily processed output of the retina and lateral geniculate nucleus, lays it out as a contralateral, retinotopic, and macula-magnified map, and performs the earliest cortical analysis of edges, orientation, contrast, and motion. The visual association cortex surrounding it interprets that early work and splits into a ventral ``what'' stream that runs into the temporal lobe to recognise objects and faces, and a dorsal ``where'' stream that runs into the parietal lobe to track motion, space, and the visual control of action. Damage at each level produces a characteristic deficit: visual field defects from V1 lesions, cortical blindness from bilateral V1 damage, and the cleanly dissociable agnosias (prosopagnosia, akinetopsia, achromatopsia, and object agnosia) from damage to specific patches of association cortex. The occipital lobe is the clearest demonstration we have that even something as immediate as ``seeing the world'' is not given by the eye but constructed, in stages, by cortex.
 
 That is the same claim the parietal lobe made about the body, now made about the visual world, and the agnosias are what make it more than an assertion. If seeing were a single capacity, damage could only make it better or worse. Instead it comes apart along seams: a patient who sees faces as faces but cannot say whose, a patient for whom a poured drink is a series of stills rather than a moving stream, a patient who sees shape and depth in a world drained of colour. Each of these is a stage of the construction failing while the others continue, and their existence is difficult to account for on any view in which vision is delivered rather than assembled. The seams are invisible in a working brain, which is precisely why they have to be found in a broken one.
 
 
 \section{The Insula}
 
-Having walked the four classical lobes, frontal, parietal, temporal, and occipital, we now turn to a fifth, often forgotten one. The \textbf{insula}, or \textbf{insular cortex}, is the cortex of \textit{the body's interior}. It is where the brain registers the state of the viscera, the feel of taste on the tongue, the slow tides of hunger and thirst, the racing of the heart, and, more abstractly, the felt quality of emotion itself. Because it has no exposed surface, it is the lobe most often left off the standard surface tour, despite carrying functions that reach from taste and visceral sensation to emotion and self-awareness.
+Having walked the four classical lobes (frontal, parietal, temporal, and occipital), we now turn to a fifth, often forgotten one. The \textbf{insula}, or \textbf{insular cortex}, is the cortex of \textit{the body's interior}. It is where the brain registers the state of the viscera, the feel of taste on the tongue, the slow tides of hunger and thirst, the racing of the heart, and, more abstractly, the felt quality of emotion itself. Because it has no exposed surface, it is the lobe most often left off the standard surface tour, despite carrying functions that reach from taste and visceral sensation to emotion and self-awareness.
 
 If the occipital lobe constructs the visual world and the temporal lobe gives it auditory and linguistic meaning, the insula constructs something stranger and more intimate: the felt sense of one's own body. Interoception, the perception of internal states, is the insula's signature function. It is the part of cortex where the workings of the gut, the lungs, and the heart are turned into the conscious feelings that we recognise, after the fact, as hunger, breathlessness, anxiety, or warmth.
 
@@ -1091,7 +1082,7 @@ Within the insula, a deep groove called the \textbf{central sulcus of the insula
 
 \begin{itemize}
     \item The \textbf{anterior insula}, made up of three short gyri, sits forward of the sulcus and is more closely tied to emotion, taste, and subjective feeling.
-    \item The \textbf{posterior insula}, made up of two long gyri, sits behind the sulcus and is more closely tied to interoceptive and somatosensory processing of the body's internal and bodily state.
+    \item The \textbf{posterior insula}, made up of two long gyri, sits behind the sulcus and is more closely tied to interoceptive and somatosensory processing of the body's internal state.
 \end{itemize}
 
 This anterior/posterior split runs through almost everything we know about the insula's function. Information tends to enter through the posterior insula, where bodily signals arrive in something like a raw form, and to be progressively re-represented and integrated as it moves forward, finally emerging in the anterior insula as the conscious, emotionally weighted feeling of being in a body.
@@ -1100,15 +1091,15 @@ This anterior/posterior split runs through almost everything we know about the i
 
 The insula's most concretely sensory role is as the cortical home of \textbf{taste}. The \textbf{primary gustatory cortex} occupies the anterior insula along with the adjacent \textbf{frontal operculum}, corresponding to \textbf{Brodmann area 43} and parts of the surrounding insular cortex. It is the cortical destination of the gustatory pathway, the place where signals from the taste buds finally become the conscious experience of sweet, salty, sour, bitter, and umami.
 
-The pathway that delivers taste to the insula is one of the most multimodal in the brainstem. Taste afferents from the anterior two-thirds of the tongue travel in the \textbf{facial nerve (CN VII)}, those from the posterior third in the \textbf{glossopharyngeal nerve (CN IX)}, and those from the epiglottis and pharynx in the \textbf{vagus nerve (CN X)}. All three converge in the \textbf{nucleus of the solitary tract} in the medulla, then ascend, with a relay in the \textbf{ventral posteromedial nucleus (VPM) of the thalamus}, to the gustatory cortex. As elsewhere, the projection is largely \textit{ipsilateral}: each side of the tongue projects mainly to the same side of the cortex, in contrast to the strict contralateral organisation of the somatosensory system.
+The pathway that delivers taste to the insula draws on three cranial nerves. Taste afferents from the anterior two-thirds of the tongue travel in the \textbf{facial nerve (CN VII)}, those from the posterior third in the \textbf{glossopharyngeal nerve (CN IX)}, and those from the epiglottis and pharynx in the \textbf{vagus nerve (CN X)}. All three converge in the \textbf{nucleus of the solitary tract} in the medulla, then ascend, with a relay in the \textbf{ventral posteromedial nucleus (VPM) of the thalamus}, to the gustatory cortex. Unusually, the projection is largely \textit{ipsilateral}: each side of the tongue projects mainly to the same side of the cortex, in contrast to the strict contralateral organisation of the somatosensory system.
 
-Damage to the gustatory cortex produces \textbf{ageusia} (loss of taste) or, more commonly, blunted and distorted taste, often noticed first as a loss of pleasure in food. As with smell, much of what we casually call ``taste'' is in fact flavour, the integration of taste with smell, which is why insular damage and olfactory damage can both produce strikingly similar complaints from patients about food.
+Damage to the gustatory cortex produces \textbf{ageusia} (loss of taste) or, more commonly, blunted and distorted taste, often noticed first as a loss of pleasure in food. As with smell, much of what we casually call ``taste'' is in fact flavour (the integration of taste with smell), which is why insular damage and olfactory damage can both produce strikingly similar complaints from patients about food.
 
 \subsection{Interoception and Visceral Sensation}
 
-Beyond taste, the larger and more distinctive role of the insula is as the cortical home of \textbf{interoception}: the perception of the body's internal state. Where S1 in the parietal lobe maps the surface of the body, the posterior and mid-insula map its interior, the heart, lungs, gut, bladder, blood vessels, and the slow chemical milieu of hunger, thirst, temperature, and breathlessness.
+Beyond taste, the larger and more distinctive role of the insula is as the cortical home of \textbf{interoception}: the perception of the body's internal state. Where S1 in the parietal lobe maps the surface of the body, the posterior and mid-insula map its interior: the heart, lungs, gut, bladder, blood vessels, and the slow chemical milieu of hunger, thirst, temperature, and breathlessness.
 
-The pathway that delivers interoceptive information is anatomically distinct from the classical somatosensory pathways. Visceral and small-fibre afferents, including the C fibres that carry slow, burning pain and warmth, ascend in the \textbf{spinothalamic} and related tracts, relay through specialised thalamic nuclei (notably parts of the \textbf{ventral medial nucleus, posterior division (VMpo)}), and project to the posterior insula. The result is a topographic map of the body's interior: a kind of visceral homunculus. Awareness of one's own heartbeat, of the urge to breathe, of fullness in the stomach, of needing to urinate, all of these depend on insular cortex.
+The pathway that delivers interoceptive information is anatomically distinct from the classical somatosensory pathways. Visceral and small-fibre afferents, including the C fibres that carry slow, burning pain and warmth, ascend in the \textbf{spinothalamic} and related tracts, relay through specialised thalamic nuclei (notably parts of the \textbf{ventral medial nucleus, posterior division (VMpo)}), and project to the posterior insula. The result is a topographic map of the body's interior: a kind of visceral homunculus. Awareness of one's own heartbeat, of the urge to breathe, of fullness in the stomach, of needing to urinate: all of these depend on insular cortex.
 
 A theme of modern cognitive neuroscience is that the posterior insula's relatively raw representation of the body is progressively \textbf{re-represented} as it is passed forward through the mid-insula to the anterior insula. The anterior insula is where the bodily state stops being a mere physiological reading and becomes a \textit{feeling}: the hot, restless, queasy, anxious quality that distinguishes one internal state from another. The anterior insula's right side in particular has been argued to host a unified ``sentient self'' representation, the felt sense of being alive in this body at this moment, although that strong claim remains debated.
 
@@ -1133,11 +1124,6 @@ That last sentence is worth unpacking, because this section is where the account
 This suggests a way of understanding what a self is that requires nothing beyond the machinery already described. Rather than a further thing that possesses the body and observes the world, the felt self can be read as another construction, built from the same materials as the visual scene and by the same sort of layered re-representation, differing only in that its subject matter is the body's own condition. That reading is not a settled result; the strong version of it, on which the right anterior insula hosts a unified representation of the sentient self, was flagged above as contested and remains so. But something like it is the reason this section sits where it does. Up to this point the notes have been assembling a model of the world. From here they are also assembling the thing that model appears to belong to, and the emotional and motivational sections that follow depend on there being an organism whose states can matter to it.
 
 
-\section{The Cerebral Cortex: An Overview}
-
-\tobewritten
-
-
 \section{The Thalamus}
 
 With the cortex described, we now go beneath it, into the diencephalon. The \textbf{thalamus} is a pair of egg-shaped masses of grey matter, one either side of the third ventricle, and it accounts for roughly four fifths of the diencephalon by volume. It sits almost exactly at the centre of the brain, and its position is not incidental: nearly everything travelling between the cortex and the rest of the nervous system passes through it.
@@ -1159,7 +1145,7 @@ It is useful to sort the remaining nuclei into three functional classes rather t
 \begin{itemize}
     \item \textbf{Relay} (or specific) nuclei receive a defined ascending pathway and project to a defined cortical area. The sensory relays (VPL, VPM, LGN, MGN) and the motor relays (VA, VL) are all of this kind, and their maps are preserved: neighbouring cells represent neighbouring parts of the body, the retina, or the cochlea.
     \item \textbf{Association} nuclei receive most of their input from the cortex rather than from an ascending tract, and project back to association cortex. The \textbf{pulvinar}, the \textbf{mediodorsal nucleus}, and the \textbf{lateral dorsal} and \textbf{lateral posterior} nuclei belong here. They serve the integrative regions of cortex rather than the primary ones.
-    \item \textbf{Nonspecific} nuclei, the intralaminar and midline groups, project diffusely to wide areas of cortex and to the striatum. They carry arousal and attentional signals from the brainstem reticular formation rather than any particular modality, and they are the route by which the level of consciousness is set.
+    \item \textbf{Nonspecific} nuclei (the intralaminar and midline groups) project diffusely to wide areas of cortex and to the striatum. They carry arousal and attentional signals from the brainstem reticular formation rather than any particular modality, and they are the route by which the level of consciousness is set.
 \end{itemize}
 
 The fibres leaving the thalamus are gathered into four \textbf{thalamic radiations} which fan through the internal capsule to reach the frontal, parietal, occipital, and temporal cortices. Because these radiations are packed so tightly, a small lesion here can produce a combination of deficits that would require a much larger cortical lesion to reproduce.
@@ -1172,7 +1158,7 @@ The \textbf{anterior nuclear group} is the thalamic member of the \textbf{Papez 
 
 The \textbf{mediodorsal nucleus (MD)} is the largest of the medial group and is the thalamic partner of the \textbf{prefrontal cortex}. Its connections with the prefrontal cortex are reciprocal and extensive, so much so that the extent of the prefrontal cortex was once defined by where MD projects. It also receives from the \textbf{amygdala}, from the olfactory cortex, and from the hypothalamus. Two consequences follow. The first is that MD is the point at which the amygdala's assessment of emotional significance reaches the executive machinery of the frontal lobe, which is what allows an emotionally salient event to capture deliberation rather than merely producing a bodily response. The second concerns olfaction: smell is the sense that bypasses the thalamus on its way to cortex, but it does not avoid the thalamus altogether. It reaches MD after its first cortical stop, and from MD reaches the orbitofrontal cortex, which is where conscious discrimination of odours occurs. The thalamic step is postponed rather than absent.
 
-Two smaller contributions complete the picture. The \textbf{midline nuclei} connect with the hippocampus, amygdala, and hypothalamus, and are involved in arousal and in visceral aspects of emotion. The \textbf{intralaminar nuclei} receive the spinothalamic fibres that do not terminate in VPL and project to the \textbf{anterior cingulate} and \textbf{insula}. This is the anatomical basis of a distinction met in the insula section: the sensory-discriminative component of pain, its location and intensity, travels the lateral route through VPL to S1, while the affective component, the part that makes pain unpleasant rather than merely detected, travels the medial route through the intralaminar nuclei to the cingulate and insula. The two can be separated by lesions, and patients in whom the medial route is interrupted may report that the pain is still there but no longer bothers them.
+Two smaller contributions complete the picture. The \textbf{midline nuclei} connect with the hippocampus, amygdala, and hypothalamus, and are involved in arousal and in visceral aspects of emotion. The \textbf{intralaminar nuclei} receive the spinothalamic fibres that do not terminate in VPL and project to the \textbf{anterior cingulate} and \textbf{insula}. This is the anatomical basis of a distinction met in the insula section: the sensory-discriminative component of pain (its location and intensity) travels the lateral route through VPL to S1, while the affective component (the part that makes pain unpleasant rather than merely detected) travels the medial route through the intralaminar nuclei to the cingulate and insula. The two can be separated by lesions, and patients in whom the medial route is interrupted may report that the pain is still there but no longer bothers them.
 
 \subsection{Sensory Involvement}
 
@@ -1183,13 +1169,13 @@ The sensory role is the one the thalamus is best known for, and the arrangement 
     \item \textbf{Ventral posteromedial (VPM)} does the same for the \textbf{face}, receiving the trigeminal pathways. Its most medial part, \textbf{VPMpc}, receives \textbf{taste} from the solitary nucleus and projects to the gustatory cortex of the insula.
     \item \textbf{Lateral geniculate nucleus (LGN)} receives the optic tract and projects through the optic radiations to V1, retinotopically arranged and layered so that input from the two eyes is kept separate until cortex.
     \item \textbf{Medial geniculate nucleus (MGN)} receives the auditory pathway from the inferior colliculus and projects to A1, tonotopically arranged.
-    \item \textbf{VMpo} and neighbouring nuclei relay the interoceptive and small-fibre afferents to the posterior insula, as described in that section.
+    \item \textbf{VMpo} and neighbouring nuclei relay the interoceptive and small-fibre afferents to the posterior insula, as described in the section on the insula.
     \item \textbf{Vestibular} information relays through the ventral posterior region to the parietoinsular vestibular cortex, the one major sensory stream without a nucleus named after it.
 \end{itemize}
 
-Smell remains the sole exception, and the reason is developmental: the olfactory system is the oldest of the sensory systems and was in place before the thalamic arrangement evolved around it.
+Smell remains the sole exception, a difference usually put down to evolutionary history: the olfactory system is among the oldest of the sensory systems, and its direct route to cortex appears to predate the thalamic arrangement the others share.
 
-The more interesting question is what the relay actually does, since a pathway that simply copied its input to cortex would not need a synapse in the middle. Two mechanisms answer it. The first is the inhibitory gating already described: the reticular nucleus, informed by cortical feedback about what is currently relevant, suppresses relay cells carrying information that is not. Attention, at this level, is a matter of which thalamic neurons are permitted to fire. The second is that relay neurons have two modes of firing. In the \textbf{tonic mode}, which prevails during waking, they fire in a graded way that faithfully transmits the detail of their input. In the \textbf{burst mode}, which prevails during drowsiness and slow-wave sleep, they fire in stereotyped bursts that carry little information about the stimulus. The transition between them is controlled by the brainstem arousal systems acting on the membrane potential of the relay cell, and it is why the same sound will wake a sleeper who is being called by name and be entirely absent from the record of the night otherwise. The rhythmic activity of the reticular nucleus during the second mode generates the \textbf{sleep spindles} visible on the EEG.
+The more interesting question is what the relay actually does, since a pathway that simply copied its input to cortex would not need a synapse in the middle. Two mechanisms answer it. The first is the inhibitory gating already described: the reticular nucleus, informed by cortical feedback about what is currently relevant, suppresses relay cells carrying information that is not. Attention, at this level, is a matter of which thalamic neurons are permitted to fire. The second is that relay neurons have two modes of firing. In the \textbf{tonic mode}, which prevails during waking, they fire in a graded way that faithfully transmits the detail of their input. In the \textbf{burst mode}, which prevails during drowsiness and slow-wave sleep, they fire in stereotyped bursts that carry little information about the stimulus. The transition between them is controlled by the brainstem arousal systems acting on the membrane potential of the relay cell, and it is why sounds that would be vivid to a waking listener can pass through a sleeper's thalamus without being registered. The rhythmic activity of the reticular nucleus during burst mode generates the \textbf{sleep spindles} visible on the EEG.
 
 The association nuclei of the dorsal tier work on sensory information after the primary cortices have had it. The \textbf{pulvinar}, the largest nucleus in the human thalamus, is connected chiefly with the visual, parietal, and temporal association areas and is heavily implicated in visual attention and in the selection of targets for eye movements; lesions of the pulvinar impair the ability to attend to one object among several without impairing the ability to see any of them. The \textbf{lateral posterior} and \textbf{lateral dorsal} nuclei serve the parietal and cingulate cortices in a similar integrative fashion.
 
@@ -1212,7 +1198,7 @@ There is a clinical corollary that has become therapeutically important. Because
 
 \subsection{Summary}
 
-The thalamus is a paired mass of grey matter at the centre of the brain through which almost all traffic between the cortex and the rest of the nervous system passes. Its internal medullary lamina divides it into anterior, medial, and lateral groups, with the intralaminar, midline, and reticular populations sitting outside that scheme; of these the reticular nucleus is the key structure, being the one thalamic nucleus that inhibits the others rather than projecting to cortex, and therefore the gate through which selection is exercised. Its limbic role runs through the anterior group, the thalamic member of the Papez circuit and a structure whose damage produces amnesia, and through the mediodorsal nucleus, which links the amygdala and the olfactory cortex to the prefrontal cortex; the intralaminar nuclei carry the affective component of pain to the cingulate and insula. Its sensory role is the familiar one of a modality-specific relay, VPL and VPM for body and face, LGN for vision, MGN for hearing, VPMpc for taste, with smell alone excepted, but the relay is an active one: cortical feedback and reticular inhibition determine what is forwarded, and the switch between tonic and burst firing determines whether the cortex is being informed about the world at all. Its motor role is to close the loops of the basal ganglia and the cerebellum, receiving inhibition from the GPi and SNr into VA and anterior VL and excitation from the dentate into posterior VL, and returning both to the motor cortices. The nuclei and their connections are gathered in Table~\ref{tab:thalamus}. The unifying idea is that the thalamus is not a junction box but a gate, and that consciousness of a sensation, the recollection of an event, and the release of a movement all depend on something being permitted through it.
+The thalamus is a paired mass of grey matter at the centre of the brain through which almost all traffic between the cortex and the rest of the nervous system passes. Its internal medullary lamina divides it into anterior, medial, and lateral groups, with the intralaminar, midline, and reticular populations sitting outside that scheme; of these the reticular nucleus is the key structure, being the one thalamic nucleus that inhibits the others rather than projecting to cortex, and therefore the gate through which selection is exercised. Its limbic role runs through the anterior group, the thalamic member of the Papez circuit and a structure whose damage produces amnesia, and through the mediodorsal nucleus, which links the amygdala and the olfactory cortex to the prefrontal cortex; the intralaminar nuclei carry the affective component of pain to the cingulate and insula. Its sensory role is the familiar one of a modality-specific relay (VPL and VPM for body and face, LGN for vision, MGN for hearing, VPMpc for taste, with smell alone excepted), but the relay is an active one: cortical feedback and reticular inhibition determine what is forwarded, and the switch between tonic and burst firing determines whether the cortex is being informed about the world at all. Its motor role is to close the loops of the basal ganglia and the cerebellum, receiving inhibition from the GPi and SNr into VA and anterior VL and excitation from the dentate into posterior VL, and returning both to the motor cortices. The nuclei and their connections are gathered in Table~\ref{tab:thalamus}. The unifying idea is that the thalamus is not a junction box but a gate, and that consciousness of a sensation, the recollection of an event, and the release of a movement all depend on something being permitted through it.
 
 Two of the results here bear directly on the larger argument, and both concern awareness rather than sensation. The first is that attention, described in earlier sections as a capacity of cortex, has a mechanism at this level: the reticular nucleus, informed by cortical feedback about what currently matters, inhibits the relay cells carrying what does not. Attending to something is not a matter of examining an internal image more closely. It is a matter of which thalamic neurons are permitted to fire, and the material that is not selected does not arrive in a diminished form but largely fails to arrive at all. This is why the peripheral detail of an absorbing moment is not merely forgotten afterwards; much of it was never forwarded in the first place.
 
@@ -1278,9 +1264,9 @@ The nuclei that matter most for what follows are these:
     \item The \textbf{supraoptic} and \textbf{paraventricular nuclei} contain large neurons that manufacture \textbf{vasopressin} and \textbf{oxytocin} and send their axons down the stalk into the posterior pituitary. They are the cells that make the hypothalamus an endocrine organ in its own right.
     \item The \textbf{suprachiasmatic nucleus}, sitting just above the optic chiasm as its name records, is the body's master clock. It receives a direct projection from the retina and uses it to keep an internal daily rhythm aligned with the external light cycle.
     \item The \textbf{arcuate nucleus} lies close to the median eminence and produces several of the releasing hormones that govern the anterior pituitary. It also carries receptors for circulating signals of energy state, which places it at the centre of appetite regulation.
-    \item The \textbf{ventromedial nucleus} is associated with satiety, the signal to stop eating, and the \textbf{lateral hypothalamic area} with the opposite, the drive to seek food, along with a broader role in arousal and motivated behaviour.
+    \item The \textbf{ventromedial nucleus} is associated with satiety (the signal to stop eating), and the \textbf{lateral hypothalamic area} with the opposite (the drive to seek food), along with a broader role in arousal and motivated behaviour.
     \item The \textbf{preoptic area}, at the front, holds the thermosensitive neurons that monitor blood temperature and the populations involved in initiating sleep.
-    \item The \textbf{mammillary bodies}, two small round swellings on the underside at the back, are not endocrine or autonomic at all. They belong to a memory circuit, and they reappear in the two subsections that follow.
+    \item The \textbf{mammillary bodies}, two small round swellings on the underside at the back, are not endocrine or autonomic at all. They belong to a memory circuit, and they reappear in the subsections on limbic involvement and pathways.
 \end{itemize}
 
 \subsection{Limbic Involvement}
@@ -1300,7 +1286,7 @@ The \textbf{posterior pituitary} is not really a gland. It is nervous tissue, an
 The \textbf{anterior pituitary} is a true gland, made of glandular rather than nervous tissue, and no hypothalamic axon reaches it. The connection is instead vascular. Smaller \textbf{parvocellular} neurons release \textbf{releasing} and \textbf{inhibiting hormones} into a specialised set of vessels at the \textbf{median eminence}, the \textbf{hypophyseal portal system}, which carries them the short distance down to the anterior lobe. There they instruct the glandular cells to release, or to withhold, the hormones that act on targets throughout the body:
 
 \begin{itemize}
-    \item \textbf{CRH} drives release of \textbf{ACTH}, which acts on the adrenal cortex to release \textbf{cortisol}. This is the axis that matters most in these notes, and it reappears in the sections on emotion and memory.
+    \item \textbf{CRH} drives release of \textbf{ACTH}, which acts on the adrenal cortex to release \textbf{cortisol}. This is the axis that matters most in these notes, and it reappears in the limbic system's subsections on memory and emotion.
     \item The remaining axes follow the same pattern with different targets: \textbf{TRH} drives \textbf{TSH} and the thyroid, \textbf{GnRH} drives \textbf{LH} and \textbf{FSH} and the gonads, and \textbf{GHRH} drives \textbf{growth hormone}, opposed by \textbf{somatostatin}.
     \item \textbf{Dopamine}, met earlier as a neurotransmitter, acts here as an inhibiting hormone, holding \textbf{prolactin} release in check. The same molecule doing an entirely different job in a different setting is the pattern noted when transmitters were introduced.
 \end{itemize}
@@ -1309,9 +1295,9 @@ Two features of this arrangement are worth drawing out. The first is the economy
 
 \subsection{Autonomic Involvement}
 
-The hypothalamus has been called the head ganglion of the autonomic nervous system, and the description is apt provided it is read as a statement about hierarchy. The hypothalamus does not innervate the heart, the gut, or the blood vessels itself. It issues instructions to the brainstem and spinal cord nuclei that do, chiefly through descending projections to the autonomic centres of the medulla and to the \textbf{intermediolateral cell column}, the strip of preganglionic sympathetic neurons running down the thoracic cord.
+The hypothalamus has been called the head ganglion of the autonomic nervous system, and the description is apt provided it is read as a statement about hierarchy. The hypothalamus does not innervate the heart, the gut, or the blood vessels itself. It issues instructions to the brainstem and spinal cord nuclei that do, chiefly through descending projections to the autonomic centres of the medulla and to the \textbf{intermediolateral cell column}, the strip of preganglionic sympathetic neurons running down the thoracic and upper lumbar cord.
 
-The two divisions introduced earlier are represented unevenly across the structure. Anterior and medial regions bias output toward the \textbf{parasympathetic} division, and posterior and lateral regions toward the \textbf{sympathetic}. This is a tendency rather than a map, and stimulation experiments produce mixed patterns rather than clean ones, but it is a useful first approximation.
+The two autonomic divisions introduced in the first section are represented unevenly across the structure. Anterior and medial regions bias output toward the \textbf{parasympathetic} division, and posterior and lateral regions toward the \textbf{sympathetic}. This is a tendency rather than a map, and stimulation experiments produce mixed patterns rather than clean ones, but it is a useful first approximation.
 
 What the hypothalamus contributes that the brainstem cannot is the \textbf{set point}. Autonomic reflexes at brainstem level are corrective but have no independent notion of what the correct value should be; the hypothalamus supplies it, and can change it. Two examples show the whole arrangement in one structure:
 
@@ -1336,7 +1322,7 @@ Two further pathways are worth naming. The \textbf{medial forebrain bundle} runs
 
 \subsection{Summary}
 
-The hypothalamus is a structure of a few grams occupying the floor of the third ventricle, and its importance lies in its position at the junction of three systems that cannot otherwise communicate. Its nuclei, grouped from front to back and from the midline outward, each take responsibility for a different regulated variable: the supraoptic and paraventricular for fluid balance and neurosecretion, the suprachiasmatic for circadian timing, the arcuate, ventromedial, and lateral areas for energy intake, the preoptic for temperature and sleep, and the mammillary bodies for the memory circuitry they share with the hippocampus. As the output stage of the limbic system, it converts emotional significance arriving from the amygdala and hippocampus into bodily change. As an endocrine organ, it commands the pituitary by two separate mechanisms, sending axons directly into the posterior lobe to release oxytocin and vasopressin into the blood, and reaching the anterior lobe indirectly through the hypophyseal portal system with releasing and inhibiting hormones that govern the peripheral endocrine axes. As the head of the autonomic hierarchy, it supplies the set points that brainstem reflexes lack, and coordinates endocrine, autonomic, and behavioural responses to a single measurement. Its named tracts, the fornix, the stria terminalis and ventral amygdalofugal pathway, the mammillothalamic tract, the medial forebrain bundle, and the retinohypothalamic tract, are the anatomical form of those relationships. For a structure so small, the hypothalamus is where a remarkable amount of what the body does without being asked is actually decided.
+The hypothalamus is a structure of a few grams occupying the floor of the third ventricle, and its importance lies in its position at the junction of three systems that cannot otherwise communicate. Its nuclei, grouped from front to back and from the midline outward, each take responsibility for a different regulated variable: the supraoptic and paraventricular for fluid balance and neurosecretion, the suprachiasmatic for circadian timing, the arcuate, ventromedial, and lateral areas for energy intake, the preoptic for temperature and sleep, and the mammillary bodies for the memory circuitry they share with the hippocampus. As the output stage of the limbic system, it converts emotional significance arriving from the amygdala and hippocampus into bodily change. As an endocrine organ, it commands the pituitary by two separate mechanisms, sending axons directly into the posterior lobe to release oxytocin and vasopressin into the blood, and reaching the anterior lobe indirectly through the hypophyseal portal system with releasing and inhibiting hormones that govern the peripheral endocrine axes. As the head of the autonomic hierarchy, it supplies the set points that brainstem reflexes lack, and coordinates endocrine, autonomic, and behavioural responses to a single measurement. Its named tracts (the fornix, the stria terminalis and ventral amygdalofugal pathway, the mammillothalamic tract, the medial forebrain bundle, and the retinohypothalamic tract) are the anatomical form of those relationships. For a structure so small, the hypothalamus is where a remarkable amount of what the body does without being asked is actually decided.
 
 The cortex constructs a world and the thalamus decides how much of it reaches awareness, but neither gives the organism any reason to act on what it finds. This section supplies that reason. A system that merely represented the world and could move would have no reason to do anything, and the hypothalamus is where reasons come from: it holds a set of variables that must stay within limits, detects departures from them, and generates the states that push behaviour toward correcting them. Hunger, thirst, cold, and the drive to sleep are not perceptions of the body but demands made upon the organism, and they are constructed here from measurements taken here. That the same structure supplies both the set point and the command is what allows a deviation to become a motive rather than merely a reading. Wanting, in its simplest and most physiological form, starts as a regulated variable drifting out of range.
 
@@ -1366,17 +1352,17 @@ The cortex constructs a world and the thalamus decides how much of it reaches aw
 \tobewritten
 
 
-\section{The Spinal Cord: Gross Anatomy and Spinal Nerves}
+\section{The Spinal Cord}
+
+\subsection{Gross Anatomy and Spinal Nerves}
 
 \tobewritten
 
-
-\section{The Spinal Cord: Grey Matter}
+\subsection{Grey Matter}
 
 \tobewritten
 
-
-\section{The Spinal Cord: White Matter}
+\subsection{White Matter}
 
 \tobewritten
 
@@ -1398,7 +1384,7 @@ The basal ganglia are made up of several nuclei, and the naming is genuinely awk
     \item The \textbf{substantia nigra} lies in the midbrain and, confusingly, does two entirely different jobs. The \textbf{pars reticulata (SNr)} is GABAergic and is the second output nucleus, the functional twin of the GPi. The \textbf{pars compacta (SNc)} is dopaminergic and is not part of the loop at all; it projects onto the striatum from the side and modulates it, which is the subject of the last two subsections of this section.
 \end{itemize}
 
-One more structure has to be named even though it is not part of the basal ganglia: the \textbf{thalamus}, and specifically its \textbf{ventral anterior (VA)} and \textbf{ventral lateral (VL)} nuclei. These are what the output nuclei act upon, and they project glutamate back up to the motor and premotor cortex. The thalamus is the thing being gated.
+One more structure has to be named even though it is not part of the basal ganglia: the \textbf{thalamus}, and specifically its \textbf{ventral anterior (VA)} and \textbf{ventral lateral (VL)} nuclei, met in the section on the thalamus. These are what the output nuclei act upon, and they project glutamate back up to the motor and premotor cortex. The thalamus is the thing being gated.
 
 Putting these together, the flow of information is a loop:
 
@@ -1451,7 +1437,7 @@ As a signed chain:
 \text{cortex} \xrightarrow{\;+\;} \text{striatum (D2)} \xrightarrow{\;-\;} \text{GPe} \xrightarrow{\;-\;} \text{STN} \xrightarrow{\;+\;} \text{GPi/SNr} \xrightarrow{\;-\;} \text{thalamus}
 \]
 
-Follow the signs and the contrast with the direct pathway becomes clear. Here too there is a double inhibition, striatum onto GPe onto STN, and here too it produces disinhibition. But the structure being disinhibited is excitatory. So instead of the released structure exciting the thalamus, the released structure excites the very nuclei that inhibit the thalamus. The disinhibition is spent on strengthening the brake rather than lifting it.
+Follow the signs and the contrast with the direct pathway becomes clear. Here too there is a double inhibition (striatum onto GPe onto STN), and here too it produces disinhibition. But the structure being disinhibited is excitatory. So instead of the released structure exciting the thalamus, the released structure excites the very nuclei that inhibit the thalamus. The disinhibition is spent on strengthening the brake rather than lifting it.
 
 The net effect of activity in the indirect pathway is therefore to \textbf{suppress movement}. The two pathways begin at the same place and converge on the same place, and they arrive with opposite sign: the direct pathway subtracts from the thalamic brake, the indirect pathway adds to it. What the cortex actually gets back depends on the balance struck between them. That balance is not fixed, and what sets it is dopamine.
 
@@ -1490,6 +1476,8 @@ The consequence follows directly from the receptor pharmacology of the previous 
 These two actions are opposite in mechanism and identical in outcome. Dopamine excites the pathway that promotes movement and inhibits the pathway that prevents it, and both effects push the balance the same way. This is the elegance of the arrangement: a single diffuse chemical signal, requiring no wiring specificity whatsoever, can shift the entire system toward action, because the two competing populations have been pre-labelled with receptors of opposite sign.
 
 The result is a \textbf{gain control} on movement. Dopamine does not choose the action; the cortex does that, by deciding which striatal neurons receive glutamate. Dopamine sets how readily whatever has been chosen gets released. When nigrostriatal dopamine is high, the threshold for releasing a movement falls and actions come easily; when it is low, the direct pathway is under-driven and the indirect pathway is under-damped, the brake stays down, and movement becomes harder to initiate.
+
+This is what fails in \textbf{Parkinson's disease}, in which the dopaminergic neurons of the pars compacta progressively die. Symptoms usually appear only once most of the striatum's dopamine has been lost, and they are the ones the arithmetic predicts: \textbf{bradykinesia} (slowness and difficulty in starting movement), rigidity, and a characteristic tremor at rest. The standard treatment is \textbf{L-DOPA}, the precursor met above, which unlike dopamine itself can cross the blood-brain barrier and is converted to dopamine by the surviving cells. \textbf{Huntington's disease} is close to the opposite case: the striatal neurons of the indirect pathway are among the first to degenerate, the brake on unwanted movement fails, and the result is \textbf{chorea}, a stream of involuntary, dance-like movements.
 
 It is worth separating the two halves of the substantia nigra once more, since the shared name invites confusion. The \textbf{pars reticulata} is a member of the loop, an output nucleus inhibiting the thalamus exactly as the GPi does. The \textbf{pars compacta} is not in the loop at all; it stands to one side and adjusts the gain of the structure that feeds it. Same anatomical name, two entirely different roles.
 
@@ -1566,9 +1554,9 @@ The existence of two input routes is worth dwelling on, because it explains a fa
 Output from the central nucleus fans out to a set of targets each of which produces one component of an emotional response, and the pattern we recognise as fear is the sum of them:
 
 \begin{itemize}
-    \item To the \textbf{lateral hypothalamus}, driving the sympathetic response, the raised heart rate and blood pressure of the autonomic section.
+    \item To the \textbf{lateral hypothalamus}, driving the sympathetic response of raised heart rate and blood pressure.
     \item To the \textbf{paraventricular nucleus}, driving \textbf{CRH} release and with it the whole endocrine stress axis described in the hypothalamus section.
-    \item To the \textbf{periaqueductal grey} of the midbrain, which organises defensive behaviour, freezing and flight.
+    \item To the \textbf{periaqueductal grey} of the midbrain, which organises defensive behaviour such as freezing and flight.
     \item To the \textbf{locus coeruleus}, raising noradrenaline and with it vigilance, and to the \textbf{basal forebrain} cholinergic neurons, sharpening attention.
     \item To the \textbf{parabrachial nucleus}, altering the pattern of breathing.
 \end{itemize}
@@ -1601,7 +1589,7 @@ The \textbf{septal area} is a small region of grey matter lying beneath the fron
 
 Its central relationship is with the hippocampus, and it is reciprocal. The \textbf{septohippocampal pathway} runs through the fornix in both directions: the hippocampus projects to the septal nuclei, and the \textbf{medial septal nucleus} projects back, sending cholinergic and GABAergic fibres that pace hippocampal activity. What they pace is the \textbf{theta rhythm}, a four to eight hertz oscillation that dominates the hippocampus during exploration and attentive behaviour and that appears to be the timing signal under which encoding takes place. Silence the medial septum and the theta rhythm stops and hippocampal learning is impaired, which is a rare case of a memory structure being disabled by removing a clock rather than a component.
 
-The septal area also connects forward to the prefrontal cortex, downward to the hypothalamus and midbrain through the medial forebrain bundle, and back to the \textbf{habenula} by way of the \textbf{stria medullaris thalami}. It sits immediately above the \textbf{nucleus accumbens}, with which it is often discussed, and this vicinity is where Olds and Milner in 1954 found that rats would press a lever to the exclusion of food and sleep in order to stimulate their own brains, the experiment that opened the study of reward.
+The septal area also connects forward to the prefrontal cortex, downward to the hypothalamus and midbrain through the medial forebrain bundle, and back to the \textbf{habenula} by way of the \textbf{stria medullaris thalami}. It sits immediately above the \textbf{nucleus accumbens}, with which it is often discussed, and this vicinity is where Olds and Milner in 1954 found that rats would repeatedly press a lever to stimulate their own brains, the experiment that opened the study of reward.
 
 Two further points are worth carrying. Septal lesions in animals produce a marked increase in defensive aggression, the phenomenon known as \textbf{septal rage}, which suggests the region normally exerts a restraining influence on the amygdala and hypothalamus. And the cholinergic cells of the medial septum belong to the same \textbf{basal forebrain} population as the nucleus basalis of Meynert, whose degeneration is a feature of Alzheimer's disease and the target of the cholinesterase inhibitors used to treat it. The role of acetylcholine in attention and memory, noted when the transmitters were first introduced, has its anatomical seat here.
 
@@ -1649,7 +1637,7 @@ The classical case at the hippocampal end is the patient known during his lifeti
 
 That second conclusion is the process called \textbf{systems consolidation}. On the standard account the hippocampus binds together the scattered cortical fragments of an experience, the sight and sound and place and feeling of it, and by repeatedly reactivating them, including during sleep, gradually strengthens the direct cortical connections among them until the binding structure is no longer required. A memory therefore migrates, in effect, from being hippocampus-dependent to being cortically self-sufficient. The prediction this makes is that retrograde amnesia after hippocampal damage should be \textbf{temporally graded}, with recent memories lost and remote ones spared, and that is broadly what is observed.
 
-At the cellular level the mechanism is \textbf{long-term potentiation}, and it draws directly on the receptor material of the firing section. The key element is the \textbf{NMDA receptor}, which is a coincidence detector: it is a glutamate-gated channel, but its pore is physically plugged by a magnesium ion at resting potential, and the block is only expelled when the membrane is already depolarised. It therefore opens only when two conditions are met at once, that the presynaptic cell has released glutamate and that the postsynaptic cell is already active. When both hold, calcium enters through the NMDA receptor and triggers a cascade whose short-term effect is to insert more AMPA receptors into the postsynaptic membrane, and whose long-term effect, by way of the activity-dependent gene expression noted when the neuron's nucleus was described, is structural change in the synapse itself. A synapse that has been part of a successful coincidence is thereafter stronger. Hebb's much-quoted formulation, that cells which fire together wire together, turns out to have a molecule behind it.
+At the cellular level the mechanism is \textbf{long-term potentiation}, and it draws directly on the receptor material of the firing section. The key element is the \textbf{NMDA receptor}, which is a coincidence detector: it is a glutamate-gated channel, but its pore is physically plugged by a magnesium ion at resting potential, and the block is only expelled when the membrane is already depolarised. It therefore opens only when two conditions are met at once: the presynaptic cell has released glutamate, and the postsynaptic cell is already active. When both hold, calcium enters through the NMDA receptor and triggers a cascade whose short-term effect is to insert more AMPA receptors into the postsynaptic membrane, and whose long-term effect, by way of the activity-dependent gene expression noted when the neuron's nucleus was described, is structural change in the synapse itself. A synapse that has been part of a successful coincidence is thereafter stronger. Hebb's much-quoted formulation, that cells which fire together wire together, turns out to have a molecule behind it.
 
 Finally, memory and emotion are not independent, and the anatomy says why. The amygdala projects to the hippocampus, and emotional arousal releases adrenaline peripherally and cortisol through the axis described in the hypothalamus section, both of which act back on these structures. Emotionally significant events are consequently encoded more strongly and retained better than neutral ones, which is adaptive in most circumstances and pathological in a few: the intrusive, vivid, involuntary memories of post-traumatic stress disorder are, on one widely held view, the same consolidation mechanism running at excessive gain.
 
@@ -1669,7 +1657,7 @@ An emotional response can be decomposed into four stages, and each has an anatom
 
 The behaviours the limbic system organises are traditionally summarised as feeding, fighting, fleeing, and reproduction, and although the mnemonic is crude it identifies the right set. What unifies them is that each is a case of the organism acting to change its own state rather than responding to the world, and each requires the same three things: a signal of what is needed, a valuation of what is available, and a mechanism for selecting among the options.
 
-The valuation machinery is the \textbf{reward system}, and its core is dopaminergic. The \textbf{ventral tegmental area (VTA)} of the midbrain projects along the medial forebrain bundle to the \textbf{nucleus accumbens} in the ventral striatum, the \textbf{mesolimbic pathway}, and to the prefrontal cortex, the \textbf{mesocortical pathway}. These are the same cells, and the same transmitter, whose motor counterpart was traced from the substantia nigra pars compacta in the basal ganglia section, and the parallel is not a coincidence. There is a \textbf{limbic loop} through the basal ganglia with exactly the architecture of the motor loop set out there: limbic and prefrontal cortex projects to the ventral striatum, the ventral striatum to the ventral pallidum, the ventral pallidum to the mediodorsal thalamus, and the thalamus back to the anterior cingulate and orbitofrontal cortex. The same disinhibitory arithmetic, the same dopaminergic gain control, applied not to the selection of a movement but to the selection of a goal.
+The valuation machinery is the \textbf{reward system}, and its core is dopaminergic. The \textbf{ventral tegmental area (VTA)} of the midbrain projects along the medial forebrain bundle to the \textbf{nucleus accumbens} in the ventral striatum (the \textbf{mesolimbic pathway}) and to the prefrontal cortex (the \textbf{mesocortical pathway}). These cells are close neighbours of the pars compacta neurons whose motor role was traced in the basal ganglia section, they release the same transmitter, and the parallel is not a coincidence. There is a \textbf{limbic loop} through the basal ganglia with exactly the architecture of the motor loop set out there: limbic and prefrontal cortex projects to the ventral striatum, the ventral striatum to the ventral pallidum, the ventral pallidum to the mediodorsal thalamus, and the thalamus back to the anterior cingulate and orbitofrontal cortex. The same disinhibitory arithmetic, the same dopaminergic gain control, applied not to the selection of a movement but to the selection of a goal.
 
 Two refinements of the popular account are worth having. The first is that dopamine does not signal pleasure. What midbrain dopamine neurons encode is closer to a \textbf{reward prediction error}, the difference between the reward obtained and the reward expected: they fire to an unexpected reward, fall silent when an expected one fails to arrive, and come to fire to the cue that predicts a reward rather than to the reward itself. It is a teaching signal, not a pleasure signal, and the lateral habenula described above supplies its negative half. The second, related, refinement is the distinction between \textbf{wanting} and \textbf{liking}. Dopamine supports the incentive salience of a goal, the pull towards it and the effort spent pursuing it, while the hedonic impact of actually obtaining it depends on opioid and endocannabinoid signalling in small regions of the accumbens and pallidum. The two can be dissociated experimentally, and the dissociation is the most useful single fact about addiction: a drug can come to be wanted enormously while being liked very little.
 
@@ -1677,7 +1665,7 @@ Addiction follows from that architecture rather than from any special property o
 
 The remaining behaviours are best traced as circuits already assembled. \textbf{Feeding and drinking} run from the arcuate, ventromedial, and lateral hypothalamic nuclei described earlier, and the lateral area's role in seeking food is inseparable from its position on the medial forebrain bundle: it is a hunger centre and a reward pathway at the same time. \textbf{Defence and aggression} run from the amygdala to the medial hypothalamus and thence to the periaqueductal grey, with the septal area exerting the restraining influence whose removal produces septal rage. \textbf{Sexual behaviour} depends on the medial preoptic area and the amygdala together, under endocrine control through the axes of the hypothalamus section.
 
-The last point to make is the one the frontal lobe section anticipated. The limbic system generates drives that are, in themselves, indifferent to circumstance: hunger does not know whether it is an appropriate moment to eat, and fear does not know whether the room contains people whose opinion matters. What supplies that knowledge is the prefrontal cortex, through its reciprocal connections with the amygdala, the hypothalamus, and the ventral striatum. Self-control, in the anatomical sense, is not the absence of limbic drive but the presence of a projection capable of modulating it, and most of the conditions in which behaviour goes conspicuously wrong, addiction, impulsivity after orbitofrontal damage, the disinhibition of frontotemporal dementia, are failures of that projection rather than excesses of the drive itself.
+The last point to make is the one the frontal lobe section anticipated. The limbic system generates drives that are, in themselves, indifferent to circumstance: hunger does not know whether it is an appropriate moment to eat, and fear does not know whether the room contains people whose opinion matters. What supplies that knowledge is the prefrontal cortex, through its reciprocal connections with the amygdala, the hypothalamus, and the ventral striatum. Self-control, in the anatomical sense, is not the absence of limbic drive but the presence of a projection capable of modulating it, and most of the conditions in which behaviour goes conspicuously wrong (addiction, impulsivity after orbitofrontal damage, the disinhibition of frontotemporal dementia) are failures of that projection rather than excesses of the drive itself.
 
 \subsection{Summary}
 
@@ -1685,7 +1673,7 @@ The limbic system is a set of structures defined by their connections rather tha
 
 Functionally, the system is built around olfaction in the sense that smell reaches it directly and without a thalamic relay, which is why odour recruits memory and emotion more immediately than any other sense. Its memory role runs through the Papez circuit, damage anywhere along which produces amnesia, and rests cellularly on NMDA-dependent long-term potentiation, a coincidence detector requiring transmitter and depolarisation together. Its emotional role decomposes into appraisal by the amygdala, output through autonomic, endocrine, and behavioural limbs of quite different timescales, feeling constructed interoceptively in the insula, and regulation imposed from the ventromedial prefrontal cortex. Its motivational role runs through a limbic loop of the basal ganglia with precisely the architecture of the motor loop, in which dopamine from the ventral tegmental area encodes not pleasure but the discrepancy between reward expected and reward obtained, and sets the gain on whether a goal is pursued. The components and their principal connections are gathered in Table~\ref{tab:limbic}. Taken together, the limbic system is where the nervous system stops asking what is present and starts asking what it is worth and what happened last time, and it is the point at which those two questions are converted into a body doing something about it.
 
-With this the ascent set out at the beginning is as complete as these notes can currently make it. The substrate was established in the opening sections on the neuron, its signalling, and the glia; the construction of a world in the sections on the cortex; and the machinery of gating, drive, selection, and valuation in the sections on the thalamus, the hypothalamus, the basal ganglia, and the limbic system. The worked example that follows runs a single event through the whole of it, from photons and pressure waves to a body that has already changed and a feeling that arrives afterwards, and the closing pages take stock of what such an account does and does not deliver.
+With this the ascent set out at the beginning is as complete as these notes can currently make it. The substrate was established in the opening sections on the neuron, its signalling, and the glia; the construction of a world in the sections on the cortex; and the machinery of gating, drive, selection, and valuation in the sections on the thalamus, the hypothalamus, the basal ganglia, and the limbic system. The closing pages of the neurology take stock of what such an account does and does not deliver.
 
 {\footnotesize
 \renewcommand{\arraystretch}{1.3}
@@ -1724,178 +1712,20 @@ Habenula & Stria medullaris from septal area and basal forebrain & Fasciculus re
 }
 
 
-\subsection{A Worked Example: The Bear in the Woods}
-
-Everything in this section has been presented structure by structure, which is how it has to be taught and is not how it ever happens. It is worth ending by running a single event through the whole system in order, because the components were described separately but they operate together and on quite different timescales, and the interleaving is most of what makes the response feel the way it does.
-
-The situation is this. You are walking a wooded path. Twenty or thirty metres ahead and slightly to one side, a branch cracks, and a large dark shape moves in the undergrowth. It is a black bear. What follows traces that event from photons and pressure waves through to a body that has already changed and a mind that is only beginning to catch up.
-
-\subsubsection{Arrival: The Sensory Pathways}
-
-Nothing about the bear enters the nervous system as a bear. What enters is a pattern of light on two retinas and a pattern of pressure on two basilar membranes, and both must travel the pathways set out in the occipital and temporal lobe sections before they mean anything at all.
-
-The visual signal leaves the retinal ganglion cells along the optic nerve, crosses partially at the optic chiasm so that each hemisphere carries the contralateral half of the field, and arrives at the \textbf{lateral geniculate nucleus}. The auditory signal leaves the cochlea along the cochlear division of CN VIII and climbs through the cochlear nuclei, superior olivary complex, lateral lemniscus, and inferior colliculus to the \textbf{medial geniculate nucleus}. Both are now in the thalamus, roughly twenty to forty milliseconds after the event, and neither has yet been identified as anything. The LGN holds a retinotopic pattern of contrast and motion; the MGN holds a tonotopic pattern with a broadband transient in it.
-
-One response has already happened without troubling any of this. The crack of the branch drives a short brainstem reflex arc from the cochlear root neurons to the caudal pontine reticular formation and thence to motor neurons, producing the \textbf{acoustic startle} within about ten to twenty milliseconds: the whole-body flinch that precedes any knowledge of what caused it. It is worth naming because the amygdala does not produce it but does modulate it, and the magnitude of a startle is a standard laboratory measure of how frightened an animal already was. Yours will be larger than it would have been an hour ago on an open road.
-
-\subsubsection{Two Roads to the Amygdala}
-
-From the thalamus the signal takes two routes at once, and the difference between them is the heart of the example.
-
-The \textbf{low road} is a direct projection from the thalamus to the basolateral amygdala, bypassing cortex entirely:
-
-\[
-\text{retina, cochlea} \rightarrow \text{LGN, MGN} \rightarrow \text{basolateral amygdala}
-\]
-
-It is fast and it is crude. What it can deliver is something on the order of \textit{large, dark, low, close, moving} — enough to specify that a big object is nearby and approaching, and nothing whatever about what the object is. The amygdala is therefore beginning to respond while the visual cortex is still assembling edges.
-
-The \textbf{high road} runs the full course described in the earlier sections:
-
-\[
-\text{LGN} \rightarrow \text{V1} \rightarrow \text{ventral stream} \rightarrow \text{inferior temporal cortex} \rightarrow \text{basolateral amygdala}
-\]
-
-V1 responds at perhaps forty to sixty milliseconds and performs its analysis of edges, orientation, and motion; the ventral ``what'' stream carries the result forward into inferior temporal cortex, where identification occurs somewhere around a hundred to two hundred milliseconds; the dorsal ``where and how'' stream simultaneously establishes distance, heading, and whether the shape is closing. In parallel the auditory signal reaches A1 on Heschl's gyri and passes to the auditory association cortex, which classifies the sound as a large animal in undergrowth rather than as wind. The \textbf{posterior association area} then does the job it was given in the parietal lobe section and binds these into one object: the seen shape and the heard sound are registered as a single thing at a single place, rather than as two unrelated reports.
-
-The asymmetry between the roads is the point, and the justification is the asymmetry of the costs. Reacting to a stick as though it were a bear costs a few seconds and some adrenaline; failing to react to a bear costs everything. A system facing that payoff structure should commit early on evidence that would not survive scrutiny, and then withdraw the commitment when scrutiny arrives, and that is precisely what the two roads implement.
-
-It should be said that the human low road is less firmly established than the textbook diagrams imply. The subcortical route was worked out in rodents, where it is not in doubt; in humans its existence and its importance are both actively disputed, with some evidence that rapid amygdala responses could be carried by fast cortical routes instead. The functional principle, that a coarse fast appraisal precedes a fine slow one, is not in question. The anatomy by which it is achieved in our own brains is less settled than the story usually told.
-
-\subsubsection{Appraisal: What It Means}
-
-The basolateral amygdala now holds both streams, and appraisal is the convergence of three things upon it.
-
-The first is the sensory evidence just described. The second is \textbf{context}, supplied by the hippocampus and entorhinal cortex: this is a wood, in bear country, and there was a sign at the trailhead. Context is what makes the same dark shape terrifying here and unremarkable behind glass at a zoo, and the division of labour is clean, since a cue can be conditioned by the amygdala alone but a context cannot be represented without the hippocampus. The third is \textbf{prior learning}, which in this case is worth a remark. You have almost certainly never been attacked by a bear, so the association is not one you acquired by conditioning in the way the laboratory paradigm describes. It arrives instead through semantic memory, from cortex, and possibly through the readiness with which certain classes of stimulus are learned as threatening at all. The amygdala's business is valuation, and it does not much care where the valuation was learned.
-
-The output of that convergence goes to the \textbf{central nucleus}, and from this point the example stops being about perception and starts being about response.
-
-\subsubsection{The Autonomic Limb: Under a Second}
-
-The central nucleus projects to the lateral hypothalamus, which commands the descending autonomic pathways of the hypothalamus section, reaching the autonomic centres of the medulla and the \textbf{intermediolateral cell column} of the thoracic cord.
-
-The first change is not an addition but a subtraction: \textbf{vagal withdrawal}. Resting parasympathetic tone on the heart is removed, and because that only requires an ongoing inhibition to stop rather than a new signal to arrive, the heart rate begins to climb within a beat or two. Sympathetic drive follows over the next several seconds and adds to it. The pattern that results is the one set out when the autonomic nervous system was introduced, now with its causes attached:
-
-\begin{itemize}
-    \item Heart rate and contractility rise; blood pressure rises; vasoconstriction in the skin and viscera diverts blood towards skeletal muscle.
-    \item The pupils dilate, the sympathetic supply to dilator pupillae overriding the parasympathetic constrictor fibres carried by CN III, which widens the aperture at the cost of depth of focus.
-    \item The airways dilate and respiration deepens and quickens.
-    \item Gut motility and salivation are suppressed, which is where the dry mouth comes from, and sweating begins, by way of the sympathetic fibres that are anomalously cholinergic.
-    \item Glycogenolysis and lipolysis are driven, and within seconds the \textbf{adrenal medulla} releases adrenaline and noradrenaline into the circulation, sustaining all of the above hormonally after the neural signal has done its part.
-\end{itemize}
-
-None of this has yet been decided on, and none of it has yet been noticed.
-
-\subsubsection{The Behavioural Limb: The Same Second}
-
-In parallel the central nucleus drives the \textbf{periaqueductal grey}, and the PAG determines which defensive behaviour is produced. Its columns are functionally distinct, and the selection between them tracks how imminent the threat is:
-
-\begin{itemize}
-    \item The \textbf{ventrolateral column} produces freezing and quiescence, and dominates when the threat is detected but distant and has not yet oriented on you.
-    \item The \textbf{dorsolateral and lateral columns} produce active flight or defensive aggression, and dominate when the threat is close or closing.
-\end{itemize}
-
-At thirty metres, with the bear apparently unaware of you, the ventrolateral column has it, and you stop dead. Freezing is not a failure to act; it is an action, selected because movement is what most reliably attracts a predator's attention. Had the bear been at five metres and coming, the same nucleus would have produced the opposite behaviour from a neighbouring column.
-
-The PAG also drives \textbf{descending analgesia}, which is why an injury sustained in the next thirty seconds may not be felt until afterwards. And the movement, when it does come, is released by the machinery of the basal ganglia section, with the thalamic brake lifted through VA and VL and dopamine setting the threshold at which the whole system consents to act.
-
-\subsubsection{The Arousal Limb: Hundreds of Milliseconds}
-
-The central nucleus simultaneously drives the ascending modulatory systems, and their effect is to change how the rest of the brain operates rather than to produce any behaviour of their own. It reaches the \textbf{locus coeruleus}, which broadcasts noradrenaline across the cortex and raises vigilance while narrowing the focus of attention; the \textbf{basal forebrain} cholinergic neurons, which sharpen cortical processing; and the \textbf{raphe} and \textbf{ventral tegmental area}.
-
-Two consequences follow in structures described earlier. The thalamic relay neurons are pushed firmly into \textbf{tonic mode}, the high-fidelity firing pattern of full waking, so that sensory detail is transmitted as faithfully as the system can manage. And the \textbf{reticular nucleus} adjusts its inhibitory gate so that what is relayed is what concerns the bear, which is what the narrowing of attention consists of at the level of cells. The reason peripheral detail is missing from the account you give later is not that you failed to remember it but that it was never forwarded.
-
-\subsubsection{The Endocrine Limb: Minutes to Hours}
-
-The slowest limb starts at the same moment as the others and takes far longer to arrive. The central nucleus drives the \textbf{paraventricular nucleus}, which releases \textbf{CRH} into the hypophyseal portal system; the anterior pituitary releases \textbf{ACTH}; the adrenal cortex releases \textbf{cortisol}, which peaks in the blood something like fifteen to twenty minutes after the branch cracked, long after the bear has gone.
-
-Cortisol mobilises glucose, modulates immune function, and acts back on the hippocampus, hypothalamus, and prefrontal cortex, both to shut the axis down by the negative feedback described in the hypothalamus section and, as the memory subsection noted, to strengthen the consolidation of what is being encoded. This limb is the reason you are still shaking twenty minutes later on a path where nothing is happening: the neural signal ended long ago and the chemical one has not.
-
-\subsubsection{Feeling: Where the Fear Is Actually Experienced}
-
-So far nothing in this account has required you to feel anything, and that is deliberate, because the feeling arrives late and is assembled from the response rather than preceding it.
-
-The bodily changes just produced are themselves sensed. Interoceptive and small-fibre afferents from the heart, lungs, gut, and vasculature ascend to \textbf{VMpo} and neighbouring thalamic nuclei and reach the \textbf{posterior insula}, which holds them as something close to a raw physiological reading. That reading is re-represented forward through the mid-insula to the \textbf{anterior insula}, where it becomes a felt quality: the pounding, the tightness, the dry mouth, the hollow sensation in the abdomen. The \textbf{anterior cingulate}, the anterior insula's partner in the salience network, flags the whole episode as the thing that matters and suppresses everything else competing for attention.
-
-At the same time the amygdala's signal reaches the \textbf{mediodorsal nucleus} of the thalamus and through it the prefrontal cortex, which is the step at which the event becomes available to deliberation rather than merely producing a response. This is roughly where you would say the fear began, and it is late, several hundred milliseconds to a second or two after your heart rate had already changed.
-
-The insula section's material is what makes this more than a curiosity. On the interoceptive account, the racing heart is not simply a symptom of the fear but part of what is read in order to produce the experience of it, which is the James--Lange position given an anatomy. The Cannon--Bard objection retains its force, since the amygdala clearly initiates the response rather than inferring it, and the honest summary is that appraisal, response, and feeling are three processes running on overlapping timescales rather than a chain with a single direction.
-
-\subsubsection{Encoding: Why You Will Remember This}
-
-While all of the above is happening, the episode is being written down. The bound percept assembled by the posterior association area reaches the \textbf{entorhinal cortex} and enters the trisynaptic circuit, through the perforant path to the dentate gyrus, the mossy fibres to CA3, and the Schaffer collaterals to CA1 and the subiculum, with the \textbf{theta rhythm} paced by the medial septum running underneath it and NMDA-dependent potentiation strengthening the synapses that carried it.
-
-Two things then make this memory unusually durable. The amygdala projects directly to the hippocampus and enhances encoding there. And the circulating adrenaline, which cannot itself cross the blood--brain barrier, acts on vagal afferents that reach the nucleus of the solitary tract and from there the locus coeruleus, so that the peripheral hormonal response feeds back into the central one; cortisol does the same more slowly. The result is the phenomenon everyone recognises, that you will be able to describe this thirty seconds of your life in detail in twenty years' time while remembering nothing whatever of the hour that preceded it.
-
-Two kinds of conditioning are also being laid down at once, and they can be separated by lesion. The \textbf{cue}, the particular sound and shape, is conditioned by the amygdala. The \textbf{context}, this stretch of path, is conditioned by the hippocampus. Walking here next year will produce an attenuated version of the entire response before you have consciously recalled why, which is the same mechanism working correctly, and is also, when the original event was severe enough and the extinction never occurs, the mechanism of post-traumatic stress disorder.
-
-\subsubsection{Regulation: Calling It Off}
-
-Finally the slow route completes what the fast route started. The cortex has by now established that this is a black bear rather than a grizzly, that it is thirty metres away, that it has not oriented on you, and that black bears are very rarely predatory towards humans. That knowledge is held in the \textbf{ventromedial prefrontal cortex}, which projects back onto the amygdala and inhibits the central nucleus. Sympathetic drive falls, vagal tone returns, the freeze releases into a slow deliberate retreat, and the cortisol continues circulating regardless because nothing can call that back.
-
-Two observations close the example. The first is that this regulation requires knowledge as well as anatomy: the vmPFC can only impose an inhibitory association it actually holds, so a person who knows nothing about bears has the same projection and nothing to send along it, and the same is true of the extinction learning that reduces a fear over repeated safe encounters. The second is that the entire episode is a negotiation between speed and accuracy. The low road commits the body to a response on evidence that would not survive a moment's scrutiny; the high road, the hippocampus, and the prefrontal cortex supply the scrutiny and withdraw the commitment. Fear is what it feels like to be inside that negotiation while it is being conducted.
-
-One structure has been silent throughout and is worth a closing sentence, since it is the component this example would otherwise leave out. The \textbf{lateral habenula} responds to aversive events by inhibiting the midbrain dopamine neurons, which is the negative teaching signal described earlier: alongside everything else, the system is recording that this path, at this hour, was a worse outcome than expected, and adjusting downward the value it will assign to walking it again.
-
-The sequence, with the rough timings that make its structure legible, is gathered in Table~\ref{tab:bear}.
-
-{\footnotesize
-\renewcommand{\arraystretch}{1.3}
-\begin{longtable}{p{2.4cm} p{4.6cm} p{7.2cm}}
-\caption{The bear in the woods, traced in order of arrival. The timings are approximate and are drawn largely from animal work; what matters is not the numbers but the ordering, and in particular that the autonomic response is complete before the feeling of fear has been assembled and long before the endocrine response has arrived.}
-\label{tab:bear} \\
-\toprule
-\textbf{Time} & \textbf{Structure} & \textbf{Event} \\
-\midrule
-\endfirsthead
-\multicolumn{3}{l}{\emph{\small Table~\ref{tab:bear} continued from previous page}} \\
-\toprule
-\textbf{Time} & \textbf{Structure} & \textbf{Event} \\
-\midrule
-\endhead
-\bottomrule
-\endfoot
-\bottomrule
-\endlastfoot
-0 & Retina, cochlea & Transduction of light and pressure \\
-10--20 ms & Cochlear root, pontine reticular formation & Acoustic startle, amygdala-potentiated \\
-20--40 ms & LGN, MGN & Thalamic relay; nothing yet identified \\
-40--80 ms & Basolateral amygdala (low road) & Crude appraisal: large, dark, close \\
-40--60 ms & V1, A1 & Primary cortical analysis begins \\
-100--200 ms & Ventral and dorsal streams, posterior association area & Identification as a bear; binding of sight and sound \\
-150--300 ms & Basolateral to central amygdala; hippocampus & Appraisal completed with context \\
-$<$1 s & Vagal withdrawal; PAG (ventrolateral) & Heart rate climbs; freezing \\
-1--5 s & IML, sympathetic chain, adrenal medulla; locus coeruleus & Full sympathetic pattern; adrenaline; vigilance and narrowed attention \\
-1--10 s & Posterior to anterior insula; anterior cingulate & The bodily state becomes a felt quality \\
-5--30 s & Mediodorsal thalamus to PFC; vmPFC to amygdala & Deliberation, then regulation and release of the freeze \\
-15--20 min & PVN, CRH, ACTH, adrenal cortex & Cortisol peaks, long after the event \\
-Hours to days & Hippocampus, amygdala & Consolidation, enhanced by adrenaline and cortisol \\
-Weeks onward & Neocortex & Systems consolidation; cue and context conditioned \\
-\end{longtable}
-}
-
-
 \section{The Autonomic Nervous System}
 
 \tobewritten
 
-
-\section{The Sympathetic Nervous System}
+\subsection{The Sympathetic Nervous System}
 
 \tobewritten
 
-
-\section{The Parasympathetic Nervous System}
+\subsection{The Parasympathetic Nervous System}
 
 \tobewritten
 
 
 \section{The Enteric Nervous System}
-
-\tobewritten
-
-
-\section{Gustation: The Taste Pathway}
 
 \tobewritten
 
@@ -1910,7 +1740,7 @@ The ledger is substantial. A system built from the parts described in these note
 
 That list is worth taking seriously, because a century ago almost none of it was available and much of it would have seemed unavailable in principle. It is also worth being exact about what kind of item each entry is, because they are not all the same. Some are genuine mechanisms, specified well enough that the phenomenon follows from the parts: the resting potential falls out of the Nernst equation and a dominant potassium permeability, and nothing further is required. The disinhibition arithmetic of the basal ganglia is of this kind, as is the opposite action of dopamine on D1 and D2 populations, and as is long-term potentiation. Others are localisations wearing the clothes of mechanisms. We can say that binding happens at the posterior association area without being able to say how separate streams become one object, and saying that the anterior insula re-represents bodily state is a description of a transformation whose actual operation is not specified. The honest position is that the account is dense in some places and thin in others, and that the thin places are mostly the ones nearest to what we most want explained.
 
-Several things are missing entirely and are still to come as the lecture series continues. The cerebellum has so far appeared only as a comparator, and its own section is still to be written. The language network has been described from its two ends without the middle. Sleep has been mentioned as a state of thalamic firing and not as a phenomenon. There is nothing on development, which is where most of the wiring described here actually comes from, and little on the cortical microcircuit, the repeated six-layer motif whose uniformity across regions is one of the more remarkable facts about the brain. Psychiatric illness has appeared only as evidence for how intact machinery works, and is left for the part of these notes devoted to it.
+Several things are missing entirely and are still to come as the lecture series continues. The cerebellum has so far appeared only as a comparator, and its own section, like those on the brainstem, the spinal cord, and the autonomic nervous system, is still to be written. The language network has been described from its two ends without the middle. Sleep has been mentioned as a state of thalamic firing and not as a phenomenon. There is nothing on development, which is where most of the wiring described here actually comes from, and little on the cortical microcircuit, the repeated six-layer motif whose uniformity across regions is one of the more remarkable facts about the brain. Psychiatric illness has appeared only as evidence for how intact machinery works, and is left for the part of these notes devoted to it.
 
 There remains the question held back at the beginning, and for now it should stay where it was put. Everything above is an account of what the machinery does. None of it addresses why the machinery should be accompanied by any experience at all, and it is worth being clear that no amount of further detail of the kind these notes contain would obviously address it either. Knowing precisely which thalamic cells were firing tonically, and precisely how the anterior insula transformed its input, would tell us with great accuracy when there is an experience and what it is an experience of, and would not tell us why there is something it is like to be the system in question. Some think that gap will close as the mechanisms fill in, and others think it is a different sort of gap. The neurology takes no position, and readers should notice that the question has been left standing rather than answered quietly along the way. It is taken up directly in the philosophical part of these notes, and what the neurology contributes to it is a precise picture of what a mechanistic account delivers, so that when the question is asked it can be asked without confusion about what has already been explained.
 
