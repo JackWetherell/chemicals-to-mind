@@ -29,7 +29,7 @@ The sections follow the order of the Ninja Nerd playlist: the cellular basics fi
 9. **The Insula**, primary gustatory cortex, interoception and visceral sensation, and the anterior insula's role in emotion, disgust, and awareness.
 10. **The Thalamus**, structure and the nuclear groups, the reticular nucleus as the gate, limbic involvement through the anterior and mediodorsal nuclei, the modality-specific sensory relays and how they are gated by attention and arousal, and the motor loops returning from the basal ganglia and cerebellum.
 11. **The Hypothalamus**, structure and nuclei, its role as the output stage of the limbic system, control of the pituitary and the endocrine axes, command of the autonomic nervous system, and the pathways linking it to the hippocampus, amygdala, and prefrontal cortex.
-12. **The Midbrain**, _to be written._
+12. **The Midbrain**, the plan common to the three levels of the brainstem, the tectum and its colliculi, blindsight, the oculomotor nuclei, the red nucleus, the substantia nigra and ventral tegmental area, the periaqueductal grey and the descending control of pain, and the reticular formation and the ascending arousal system.
 13. **The Pons**, _to be written._
 14. **The Medulla**, _to be written._
 15. **The Cerebellum**, _to be written._
